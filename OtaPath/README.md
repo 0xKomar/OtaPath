@@ -58,15 +58,28 @@ Transcranial Magnetic Stimulation (**TMS**) is a breakthrough treatment that lif
 ## 🚀 How to Run & Experience the Demo
 
 ### Step 1: Local Setup
+
+From the repository root, install the application dependencies and create a local
+environment file:
+
 ```bash
-# 1. Clone the repository and install dependencies
-npm install
+cd OtaPath
+npm ci
+cp .env.local.example .env.local
+```
 
-# 2. Configure API keys in .env.local (optional — full offline/synthesizer fallbacks are built in!)
-ELEVENLABS_API_KEY=your_elevenlabs_api_key
-OPENAI_API_KEY=your_openai_api_key
+Create a Supabase project and run [`supabase/schema.sql`](supabase/schema.sql)
+in its SQL Editor to create the tables and demonstration accounts. Set
+`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and
+`SUPABASE_SERVICE_ROLE_KEY` in `.env.local`. Keep the service-role key server-side.
 
-# 3. Initialize the SQLite database and start the dev server
-npx prisma db push
+`ELEVENLABS_API_KEY` enables generated music and narration. Optionally add
+`OPENAI_API_KEY` for AI-assisted reflection analysis. Without these optional
+services, the app uses synthesized audio and heuristic analysis. Persistent
+backend features require a configured Supabase project.
+
+Start the application:
+
+```bash
 npm run dev
 ```

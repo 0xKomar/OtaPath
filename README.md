@@ -3,6 +3,8 @@
 OtaPath is a walking companion and post-TMS recovery project. This repository
 contains the application and the editable source and assets for its demo video.
 
+- [Project description](PROJECT_DESCRIPTION.md): purpose, problem, solution,
+  features, technology stack, architecture, and prototype scope.
 - [Application](OtaPath/README.md): the Next.js patient app, clinician portal,
   API routes, and database schema.
 - [Demo video](otapath-video/README.md): the Remotion pitch video, recordings,
