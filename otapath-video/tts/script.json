@@ -1,0 +1,36 @@
+{
+  "voice": "af_heart",
+  "speed": 1.1,
+  "lines": [
+    { "id": "hook-1", "section": "hook", "text": "TMS therapy can lift people out of severe depression.", "say": "T M S therapy can lift people out of severe depression." },
+    { "id": "hook-2", "section": "hook", "text": "Then they're sent home — alone.", "say": "Then they're sent home... alone." },
+    { "id": "hook-3", "section": "hook", "text": "Within a year, roughly one in three relapses.", "say": "Within a year, roughly one in three relapses." },
+    { "id": "hook-4", "section": "hook", "text": "And the warning signs? Nobody is watching.", "say": "And the warning signs? Nobody is watching." },
+
+    { "id": "sol-1", "section": "solution", "text": "Meet OtaPath: a warm walking companion for the fragile weeks after treatment.", "say": "Meet Ota Path: a warm walking companion, for the fragile weeks after treatment." },
+    { "id": "sol-2", "section": "solution", "text": "No questionnaires. No streaks. No guilt.", "say": "No questionnaires. No streaks. No guilt." },
+    { "id": "sol-3", "section": "solution", "text": "Just tiny real-world quests — while voice, photos and movement quietly keep the care team in the loop.", "say": "Just tiny, real-world quests, while voice, photos and movement quietly keep the care team in the loop." },
+
+    { "id": "f1-1", "section": "feature1", "text": "Feature one: the map is the game.", "say": "Feature one: the map is the game." },
+    { "id": "f1-2", "section": "feature1", "text": "Matti opens the app, meets his walking buddy, and finds a gentle quest prescribed by his own doctor.", "say": "Matti opens the app, meets his walking buddy, and finds a gentle quest, prescribed by his own doctor." },
+    { "id": "f1-3", "section": "feature1", "text": "Every step outside clears golden mist from his real neighborhood.", "say": "Every step outside clears golden mist from his real neighborhood." },
+    { "id": "f1-4", "section": "feature1", "text": "There's nothing to fail — only streets to rediscover.", "say": "There's nothing to fail. Only streets to rediscover." },
+
+    { "id": "f2-1", "section": "feature2", "text": "Feature two: memory capsules.", "say": "Feature two: memory capsules." },
+    { "id": "f2-2", "section": "feature2", "text": "At the park, he snaps one vivid thing and leaves a ten-second voice note.", "say": "At the park, he snaps one vivid thing, and leaves a ten-second voice note." },
+    { "id": "f2-3", "section": "feature2", "text": "Under the hood, OtaPath reads the pitch and energy of his voice, the color and light of his photo, and the richness of his words.", "say": "Under the hood, Ota Path reads the pitch and energy of his voice, the color and light of his photo, and the richness of his words." },
+    { "id": "f2-4", "section": "feature2", "text": "No forms. He just made a memory — pinned to the map.", "say": "No forms. He just made a memory, pinned to the map." },
+
+    { "id": "f3-1", "section": "feature3", "text": "Feature three: the clinician's side of the loop.", "say": "Feature three: the clinician's side of the loop." },
+    { "id": "f3-2", "section": "feature3", "text": "Dr. Lindqvist's dashboard had already flagged Matti's quiet slide.", "say": "Doctor Lindqvist's dashboard had already flagged Matti's quiet slide." },
+    { "id": "f3-3", "section": "feature3", "text": "Today's capsule pulls his curves back up.", "say": "Today's capsule pulls his curves back up." },
+    { "id": "f3-4", "section": "feature3", "text": "She plays his voice note, prescribes his next quest, sends a warm check-in — and seconds later, it lands on his phone.", "say": "She plays his voice note, prescribes his next quest, sends a warm check-in. And seconds later, it lands on his phone." },
+
+    { "id": "diff-1", "section": "difference", "text": "OtaPath never asks how you feel — it notices.", "say": "Ota Path never asks how you feel. It notices." },
+    { "id": "diff-2", "section": "difference", "text": "Every signal is compared to the patient's own baseline, and a learning loop tracks which places lift each person.", "say": "Every signal is compared to the patient's own baseline, and a learning loop tracks which places lift each person." },
+    { "id": "diff-3", "section": "difference", "text": "Built in a single hackathon: a real app, a real backend, a real closed loop.", "say": "Built in a single hackathon: a real app, a real backend, a real closed loop." },
+
+    { "id": "end-1", "section": "ending", "text": "OtaPath. From hospital discharge to lasting recovery — one small walk at a time.", "say": "Ota Path. From hospital discharge, to lasting recovery. One small walk at a time." },
+    { "id": "end-2", "section": "ending", "text": "Step outside. Feel brighter.", "say": "Step outside. Feel brighter." }
+  ]
+}

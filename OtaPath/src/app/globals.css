@@ -1,0 +1,616 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ------------------------------------------------------------------ */
+/* OtaPath — Warm Solar & Organic Earth                                */
+/* CSS-var mirrors of tailwind.config.ts palette. Keep in sync.        */
+/* ------------------------------------------------------------------ */
+:root {
+  --cream: #fdf8ee;
+  --butter: #fbe8a6;
+  --solar: #ffce32;
+  --tangerine: #ff6b2b;
+  --forest: #1e8e5a;
+  --cobalt: #2563eb;
+  --sky: #38bdf8;
+  --blush: #f472b6;
+  --charcoal: #1c1917;
+
+  --background: var(--cream);
+  --foreground: var(--charcoal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", system-ui,
+    -apple-system, sans-serif;
+  /* Papery grain — warm fractal noise at ~4% over the cream canvas */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/></svg>");
+  background-blend-mode: multiply;
+}
+
+::selection {
+  background: var(--solar);
+  color: var(--charcoal);
+}
+
+*:focus-visible {
+  outline: 3px solid var(--tangerine);
+  outline-offset: 3px;
+}
+
+@layer components {
+  /* Chunky tactile card — flat color block + sticker bottom edge, no shadows */
+  .card-tactile {
+    @apply rounded-[28px] border-b-4 border-stone-900/10;
+  }
+
+  /* Editorial serif display helper (also available as font-display) */
+  .display-italic {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-style: italic;
+    font-optical-sizing: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* ExploreMap — warm paper reskin for Leaflet                          */
+/* ------------------------------------------------------------------ */
+.leaflet-container {
+  background: #efe5cb; /* warm map paper under the tiles */
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  outline: none;
+}
+
+.leaflet-control-attribution {
+  background: rgba(253, 248, 238, 0.9) !important;
+  color: rgba(28, 25, 23, 0.5);
+  font: 600 10px var(--font-jakarta), sans-serif;
+  border-radius: 10px 0 0 0;
+  padding: 2px 8px;
+}
+.leaflet-control-attribution a {
+  color: rgba(28, 25, 23, 0.65);
+}
+
+/* DOM-overlay pins + walker + memories (portal layer above mapPane) */
+.pin-svg,
+.walker-svg,
+.mem-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.pin-svg:not(.pin-active) {
+  opacity: 0.55;
+}
+.ota-dom-walker {
+  will-change: transform;
+}
+.sim-running .ota-dom-walker {
+  transition: transform 0.42s linear;
+}
+
+/* glowing beacon ring behind active-tier pins */
+.pin-beacon {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pinPulse 2.2s ease-out infinite;
+}
+/* soft halo breathing around CloudWalker */
+.walker-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pinPulse 2.8s ease-out infinite;
+}
+@keyframes pinPulse {
+  0% {
+    opacity: 0.85;
+    transform: scale(0.55);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+}
+
+/* frosted Memory Echo pin — dimmed, gently beckoning */
+.mem-echo {
+  opacity: 0.8;
+}
+.echo-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: echoPulse 3.4s ease-in-out infinite;
+}
+@keyframes echoPulse {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.15);
+  }
+}
+
+/* MemoryEcho photo unblur transition */
+.echo-photo {
+  transition: filter 1.6s ease;
+}
+
+/* toast / drawer entrance */
+.toast-in {
+  animation: toastIn 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.35) both;
+}
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* fireflies — anonymous peer-presence glow at public POIs */
+.firefly-dot {
+  background: #ffce32;
+  box-shadow:
+    0 0 6px 2px rgba(255, 206, 50, 0.55),
+    0 0 12px 4px rgba(255, 179, 71, 0.25);
+  animation: fireflyFloat 3.6s ease-in-out infinite;
+}
+@keyframes fireflyFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-5px) scale(1.18);
+    opacity: 0.95;
+  }
+}
+
+/* comfort-mode ken burns drift */
+.ken-burns {
+  animation: kenBurns 9s ease-in-out infinite alternate;
+}
+@keyframes kenBurns {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.08) translate(-1%, -1.5%);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Craft layer — sparkles, pin-drop, mascot life, comfort modes         */
+/* ------------------------------------------------------------------ */
+
+/* golden sparkle at the fog peel edge — rises, twinkles, dissolves */
+.sparkle {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--solar);
+  box-shadow:
+    0 0 6px 2px rgba(255, 206, 50, 0.8),
+    0 0 14px 5px rgba(255, 206, 50, 0.35);
+  animation: sparkleRise 0.95s cubic-bezier(0.2, 0.7, 0.4, 1) both;
+  pointer-events: none;
+}
+@keyframes sparkleRise {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.3);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.15);
+  }
+}
+
+/* freshly-tucked capsule: pin drops in with a squash + warm ripple */
+.pin-drop {
+  animation: pinDrop 0.7s cubic-bezier(0.3, 1.4, 0.4, 1) both;
+}
+@keyframes pinDrop {
+  0% {
+    opacity: 0;
+    translate: 0 -34px;
+    scale: 0.6;
+  }
+  55% {
+    opacity: 1;
+    translate: 0 3px;
+    scale: 1.08 0.9;
+  }
+  75% {
+    translate: 0 -1px;
+    scale: 0.96 1.04;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+.pin-ripple {
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid var(--solar);
+  opacity: 0;
+  animation: pinRipple 1.6s ease-out 0.35s both;
+  pointer-events: none;
+}
+@keyframes pinRipple {
+  0% {
+    opacity: 0.85;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+/* mascot life — gentle blinks + cursor-following eyes */
+.pin-eyes,
+.walker-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mascotBlink 4.8s ease-in-out infinite;
+}
+.walker-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translate(var(--wx, 0px), var(--wy, 0px));
+  transition: transform 0.22s ease-out;
+}
+@keyframes mascotBlink {
+  0%,
+  91%,
+  98%,
+  100% {
+    transform: scaleY(1);
+  }
+  94% {
+    transform: scaleY(0.08);
+  }
+}
+
+/* mission bottom sheet — peek ⇄ expanded, spring-soft */
+.mission-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.3, 1.1, 0.3, 1);
+}
+.mission-body[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.mission-body > div {
+  overflow: hidden;
+}
+
+/* bottom thumb-nav entrance */
+.tabbar-in {
+  animation: tabbarIn 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes tabbarIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Sensory Comfort — soft motion + warm candlelight paper               */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.motion-soft *,
+.motion-soft *::before,
+.motion-soft *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* candlelight — warm espresso paper, never cold blue-black */
+.candle {
+  --cream: #f5ead6;
+  --butter: #4a3a27;
+  --solar: #ffce32;
+  --charcoal: #f3e8d4;
+}
+.candle,
+.candle body {
+  background-color: #241e1a;
+  color: #f3e8d4;
+}
+/* surfaces that used cream/butter become warm espresso tones */
+.candle .bg-cream {
+  background-color: #33291f !important;
+}
+.candle .bg-butter {
+  background-color: #453624 !important;
+}
+.candle .bg-butter\/40,
+.candle .bg-butter\/60 {
+  background-color: #2b2119 !important;
+}
+.candle .bg-cream\/95,
+.candle .bg-cream\/97 {
+  background-color: rgba(36, 30, 26, 0.96) !important;
+}
+.candle .bg-solar {
+  background-color: #e8a93c !important;
+}
+.candle .text-ink-charcoal {
+  color: #f3e8d4 !important;
+}
+.candle .text-ink-charcoal\/85,
+.candle .text-ink-charcoal\/80,
+.candle .text-ink-charcoal\/75,
+.candle .text-ink-charcoal\/70 {
+  color: rgba(243, 232, 212, 0.85) !important;
+}
+.candle .text-ink-charcoal\/65,
+.candle .text-ink-charcoal\/60,
+.candle .text-ink-charcoal\/55,
+.candle .text-ink-charcoal\/50 {
+  color: rgba(243, 232, 212, 0.62) !important;
+}
+.candle .text-ink-charcoal\/45,
+.candle .text-ink-charcoal\/40,
+.candle .text-ink-charcoal\/35 {
+  color: rgba(243, 232, 212, 0.45) !important;
+}
+.candle .border-stone-900\/10 {
+  border-color: rgba(253, 248, 238, 0.12) !important;
+}
+.candle .border-ink-charcoal\/10 {
+  border-color: rgba(243, 232, 212, 0.14) !important;
+}
+.candle .bg-ink-charcoal {
+  background-color: #f3e8d4 !important;
+}
+/* toast/bottom-pill ink surfaces flip light → their cream text goes dark */
+.candle .bg-ink-charcoal,
+.candle .bg-ink-charcoal .text-cream,
+.candle .bg-ink-charcoal.text-cream {
+  color: #241e1a;
+}
+
+/* ── clinician dark mode — scoped utility overrides ───────────────
+   applied to the /clinician workspace root when the rail's Dark mode
+   switch is on; maps the light workstation palette to warm dark     */
+.clin-dark { --tick-empty: #3a3530; }
+/* surfaces */
+.clin-dark .bg-white,
+.clin-dark .bg-white\/95,
+.clin-dark .bg-white\/60,
+.clin-dark .bg-white\/70 { background-color: #211e1b; }
+.clin-dark .bg-\[\#FCFCFA\],
+.clin-dark .bg-\[\#FAFAF9\] { background-color: #1b1916; }
+.clin-dark .bg-\[\#F4F4F2\] { background-color: #2b2724; }
+.clin-dark .bg-\[\#F7F7F5\] { background-color: #1c1917; }
+.clin-dark .bg-\[\#E4E4E7\] { background-color: #3a3530; }
+.clin-dark .bg-cream { background-color: #262220; }
+.clin-dark .bg-zinc-50 { background-color: #262220; }
+.clin-dark .bg-zinc-100 { background-color: rgba(255, 255, 255, 0.07); }
+.clin-dark .bg-zinc-300 { background-color: #57504a; }
+/* ink buttons → light */
+.clin-dark .bg-\[\#18181B\],
+.clin-dark .bg-zinc-900 { background-color: #f4f2ef; color: #18181b; }
+.clin-dark .bg-\[\#18181B\]:hover,
+.clin-dark .bg-zinc-900:hover,
+.clin-dark .hover\:bg-zinc-800:hover { background-color: #e4e0da; }
+/* borders */
+.clin-dark .border-\[\#E6E6E3\],
+.clin-dark .border-zinc-200 { border-color: #38342f; }
+.clin-dark .border-\[\#D1D1CD\],
+.clin-dark .border-zinc-300,
+.clin-dark .border-zinc-400 { border-color: #4a453f; }
+.clin-dark .border-zinc-900 { border-color: #57504a; }
+.clin-dark .border-stone-900\/10,
+.clin-dark .border-stone-900\/20 { border-color: rgba(255, 255, 255, 0.14); }
+.clin-dark .hover\:border-\[\#D1D1CD\]:hover,
+.clin-dark .hover\:border-zinc-300:hover,
+.clin-dark .hover\:border-zinc-400:hover { border-color: #57504a; }
+/* triage + status pills → translucent tints */
+.clin-dark .bg-orange-50 { background-color: rgba(255, 107, 43, 0.14); }
+.clin-dark .border-orange-200 { border-color: rgba(255, 140, 80, 0.3); }
+.clin-dark .text-orange-700 { color: #ffb27a; }
+.clin-dark .text-orange-600 { color: #ff9a5c; }
+.clin-dark .bg-amber-50 { background-color: rgba(245, 158, 11, 0.13); }
+.clin-dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.3); }
+.clin-dark .text-amber-700,
+.clin-dark .text-amber-600 { color: #fbbf24; }
+.clin-dark .bg-emerald-50 { background-color: rgba(16, 185, 129, 0.13); }
+.clin-dark .border-emerald-200 { border-color: rgba(52, 211, 153, 0.3); }
+.clin-dark .text-emerald-700,
+.clin-dark .text-emerald-600 { color: #34d399; }
+/* text */
+.clin-dark .text-zinc-900 { color: #f4f2ef; }
+.clin-dark .text-zinc-800 { color: #e8e5e1; }
+.clin-dark .text-zinc-700 { color: #c7c2bb; }
+.clin-dark .text-zinc-600 { color: #a8a29a; }
+.clin-dark .text-zinc-500 { color: #8f8980; }
+.clin-dark .text-zinc-400 { color: #78726a; }
+.clin-dark .text-zinc-300 { color: #5c564e; }
+.clin-dark .text-blue-600 { color: #60a5fa; }
+.clin-dark .text-ink-charcoal { color: #ede9e3; }
+.clin-dark .text-ink-charcoal\/60 { color: rgba(237, 233, 227, 0.6); }
+.clin-dark .fill-cream { fill: #18181b; }
+/* inputs */
+.clin-dark .placeholder\:text-zinc-400::placeholder,
+.clin-dark .placeholder\:text-zinc-300::placeholder { color: #6b655d; }
+/* svg chart internals — presentation attrs lose to css */
+.clin-dark svg [stroke="#E6E6E3"] { stroke: #37322d; }
+.clin-dark svg [stroke="#D4D4D8"] { stroke: #4a453f; }
+.clin-dark svg [fill="#A1A1AA"] { fill: #7a756d; }
+.clin-dark svg [stroke="#A1A1AA"] { stroke: #7a756d; }
+.clin-dark svg [stroke="#1C1917"] { stroke: #d8d4cf; }
+.clin-dark svg [stroke="#FFFFFF"] { stroke: #211e1b; }
+/* mission-builder map — dim the light Carto tiles to match the chrome */
+.clin-dark .leaflet-tile-pane { filter: brightness(0.68) saturate(0.72) contrast(1.06); }
+.clin-dark .leaflet-container { background: #211e1b; }
+.clin-dark .hover\:bg-\[\#FAFAF9\]:hover { background-color: #262220; }
+.clin-dark .divide-\[\#E6E6E3\] > :not([hidden]) ~ :not([hidden]) { border-color: #38342f; }
+
+/* ------------------------------------------------------------------ */
+/* OtaDog — the walking companion (states ported from dog.html)        */
+/* ------------------------------------------------------------------ */
+.otadog .dg-root, .otadog .dg-body, .otadog .dg-head, .otadog .dg-tail,
+.otadog .dg-front-near, .otadog .dg-front-far,
+.otadog .dg-back-near, .otadog .dg-back-far,
+.otadog .dg-medal, .otadog .dg-shadow, .otadog .dg-confetti {
+  transform-box: view-box;
+}
+.otadog .dg-root       { transform-origin: 512px 540px; }
+.otadog .dg-body       { transform-origin: 512px 460px; }
+.otadog .dg-head       { transform-origin: 355px 335px; }
+.otadog .dg-tail       { transform-origin: 730px 365px; }
+.otadog .dg-front-far  { transform-origin: 365px 490px; }
+.otadog .dg-front-near { transform-origin: 400px 495px; }
+.otadog .dg-back-far   { transform-origin: 625px 510px; }
+.otadog .dg-back-near  { transform-origin: 696px 510px; }
+.otadog .dg-medal      { transform-origin: 294px 378px; }
+.otadog .dg-shadow     { transform-origin: 550px 684px; }
+.otadog .dg-confetti   { transform-origin: 512px 160px; opacity: 0; }
+
+/* 0 — static: museum pose */
+.otadog-static * { animation: none !important; }
+.otadog-static .dg-confetti { opacity: 0 !important; }
+
+/* 1 — walk: gentle, flowing stride */
+.otadog-walk .dg-root   { animation: dog-walk-bob 0.85s ease-in-out infinite alternate; }
+.otadog-walk .dg-head   { animation: dog-walk-head 0.85s ease-in-out infinite alternate; }
+.otadog-walk .dg-tail   { animation: dog-walk-tail 0.85s ease-in-out infinite alternate; }
+.otadog-walk .dg-medal  { animation: dog-walk-medal 0.85s ease-in-out infinite alternate; }
+.otadog-walk .dg-front-near { animation: dog-walk-leg-a 1.7s ease-in-out infinite; }
+.otadog-walk .dg-back-far   { animation: dog-walk-leg-a 1.7s ease-in-out infinite; }
+.otadog-walk .dg-front-far  { animation: dog-walk-leg-b 1.7s ease-in-out infinite; }
+.otadog-walk .dg-back-near  { animation: dog-walk-leg-b 1.7s ease-in-out infinite; }
+.otadog-walk .dg-shadow { animation: dog-walk-shadow 0.85s ease-in-out infinite alternate; }
+
+@keyframes dog-walk-bob    { 0% { transform: translateY(0); } 100% { transform: translateY(-8px); } }
+@keyframes dog-walk-head   { 0% { transform: rotate(-2deg); } 100% { transform: rotate(2.5deg); } }
+@keyframes dog-walk-tail   { 0% { transform: rotate(-5deg); } 100% { transform: rotate(7deg); } }
+@keyframes dog-walk-medal  { 0% { transform: rotate(-9deg); } 100% { transform: rotate(8deg); } }
+@keyframes dog-walk-leg-a  { 0%,100% { transform: rotate(-18deg) translateY(-3px); } 50% { transform: rotate(18deg) translateY(0); } }
+@keyframes dog-walk-leg-b  { 0%,100% { transform: rotate(18deg) translateY(0); } 50% { transform: rotate(-18deg) translateY(-3px); } }
+@keyframes dog-walk-shadow { 0% { transform: scaleX(1); opacity: 0.9; } 100% { transform: scaleX(0.94); opacity: 0.75; } }
+
+/* 2 — idle: standing, breathing, tail wag */
+.otadog-idle .dg-root       { transform: translateY(42px); }
+.otadog-idle .dg-front-far  { transform: rotate(22deg); }
+.otadog-idle .dg-front-near { transform: rotate(-16deg); }
+.otadog-idle .dg-back-far   { transform: rotate(-16deg); }
+.otadog-idle .dg-back-near  { transform: rotate(-16deg); }
+.otadog-idle .dg-body  { animation: dog-idle-breathe 2.4s ease-in-out infinite alternate; }
+.otadog-idle .dg-head  { animation: dog-idle-head 2.4s ease-in-out infinite alternate; }
+.otadog-idle .dg-tail  { animation: dog-idle-wag 0.55s ease-in-out infinite alternate; }
+.otadog-idle .dg-medal { animation: dog-idle-medal 2.4s ease-in-out infinite alternate; }
+
+@keyframes dog-idle-breathe { 0% { transform: scaleY(1); } 100% { transform: scaleY(1.015); } }
+@keyframes dog-idle-head    { 0% { transform: rotate(0); } 100% { transform: rotate(-3.5deg); } }
+@keyframes dog-idle-wag     { 0% { transform: rotate(-9deg); } 100% { transform: rotate(15deg); } }
+@keyframes dog-idle-medal   { 0% { transform: rotate(-2deg); } 100% { transform: rotate(4deg); } }
+
+/* 3 — win: happy jump + confetti */
+.otadog-win .dg-root   { animation: dog-win-jump 1.3s ease-in-out infinite; }
+.otadog-win .dg-body   { animation: dog-win-tilt 1.3s ease-in-out infinite; }
+.otadog-win .dg-head   { animation: dog-win-head 1.3s ease-in-out infinite; }
+.otadog-win .dg-tail   { animation: dog-win-tail 0.35s ease-in-out infinite alternate; }
+.otadog-win .dg-front-near { animation: dog-win-front-near 1.3s ease-in-out infinite; }
+.otadog-win .dg-front-far  { animation: dog-win-front-far 1.3s ease-in-out infinite; }
+.otadog-win .dg-back-near,
+.otadog-win .dg-back-far   { animation: dog-win-back 1.3s ease-in-out infinite; }
+.otadog-win .dg-medal  { animation: dog-win-medal 1.3s ease-in-out infinite; }
+.otadog-win .dg-shadow { animation: dog-win-shadow 1.3s ease-in-out infinite; }
+.otadog-win .dg-confetti { opacity: 1; animation: dog-confetti 2.6s ease-in-out infinite; }
+
+@keyframes dog-win-jump  { 0%,100% { transform: translateY(34px) scaleY(0.95) scaleX(1.03); } 18% { transform: translateY(42px) scaleY(0.91) scaleX(1.05); } 52% { transform: translateY(-65px) scaleY(1.02) scaleX(0.99); } 85% { transform: translateY(34px) scaleY(0.96) scaleX(1.02); } }
+@keyframes dog-win-tilt  { 0%,18%,100% { transform: rotate(0); } 52% { transform: rotate(-8deg); } }
+@keyframes dog-win-head  { 0%,18%,100% { transform: rotate(0); } 52% { transform: rotate(-9deg); } }
+@keyframes dog-win-tail  { 0% { transform: rotate(-10deg); } 100% { transform: rotate(18deg); } }
+@keyframes dog-win-front-near { 0%,18%,100% { transform: rotate(-14deg); } 52% { transform: rotate(28deg); } }
+@keyframes dog-win-front-far  { 0%,18%,100% { transform: rotate(18deg); } 52% { transform: rotate(42deg); } }
+@keyframes dog-win-back  { 0%,18%,100% { transform: rotate(-10deg); } 52% { transform: rotate(-28deg); } }
+@keyframes dog-win-medal { 0%,18%,100% { transform: rotate(0); } 52% { transform: rotate(24deg); } }
+@keyframes dog-win-shadow { 0%,18%,100% { transform: scaleX(1.05); opacity: 0.9; } 52% { transform: scaleX(0.65); opacity: 0.4; } }
+@keyframes dog-confetti  { 0% { transform: translateY(25px) scale(0.9); opacity: 0; } 25% { opacity: 1; } 80% { opacity: 1; } 100% { transform: translateY(-35px) scale(1.05); opacity: 0; } }
+
+/* soft motion: every animation settles, no bobbing for sensitive days */
+.motion-soft .otadog *, .motion-soft .dg-confetti { animation: none !important; }
+
+/* patient app typeface — rounded Nunito wherever .app-nunito wraps */
+.app-nunito,
+.app-nunito .font-sans,
+.app-nunito .font-display {
+  font-family: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+}
+
+/* mission route suggestion — a soft dotted path the mist can't hide */
+@keyframes route-march {
+  to { stroke-dashoffset: -22; }
+}
+.ota-route {
+  fill: none;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.ota-route-march { animation: route-march 1.4s linear infinite; }
+.motion-soft .ota-route-march { animation: none; }
+
+/* demo deck — pulsing orange gradient edge + slide entrance */
+@keyframes ota-edge-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.ota-edge-pulse { animation: ota-edge-pulse 3s ease-in-out infinite; }
+
+@keyframes ota-slide-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.ota-slide-in { animation: ota-slide-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes ota-pop-in {
+  from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.ota-pop-in { animation: ota-pop-in 0.22s cubic-bezier(0.22, 1, 0.36, 1) both; }

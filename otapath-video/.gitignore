@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.env
+# Ignore the output video from Git but not videos you import into src/.
+out
+# raw screencast frames (several GB) — regenerate with capture/record.mjs
+capture/raw
+capture/explore
+capture/assets/candidates
+# TTS model weights — downloaded by the instructions in README.md
+tts/models

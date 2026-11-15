@@ -1,0 +1,136 @@
+{
+  "clinic": {
+    "file": "footage/clinic.mp4",
+    "width": 2880,
+    "height": 1620,
+    "duration": 52.756,
+    "t0": 1794699468.073,
+    "viewport": {
+      "width": 2880,
+      "height": 1620
+    },
+    "events": {
+      "detail": 0.147,
+      "charts": 6.827,
+      "capsules": 10.722,
+      "capsule-play": 14.575,
+      "builder": 19.463,
+      "picked": 24.233,
+      "mission-sent": 31.438,
+      "mission-landed": 32.237,
+      "phone-mission-open": 36.352,
+      "nudge-sent": 47.47,
+      "nudge-landed": 48.254
+    }
+  },
+  "clinic-before": {
+    "file": "footage/clinic-before.mp4",
+    "width": 2880,
+    "height": 1620,
+    "duration": 20.608,
+    "t0": 1794699328.499,
+    "viewport": {
+      "width": 2880,
+      "height": 1620
+    },
+    "events": {
+      "dash": 0,
+      "review": 6.04,
+      "alert": 8.723,
+      "charts": 17.407
+    }
+  },
+  "landing": {
+    "file": "footage/landing.mp4",
+    "width": 2880,
+    "height": 1620,
+    "duration": 7.687,
+    "t0": 1794698980.102,
+    "viewport": {
+      "width": 2880,
+      "height": 1620
+    },
+    "events": {
+      "hover:Guided demo": 2.56,
+      "hover:Clinician dashboard": 4.373,
+      "hover:Patient app": 6.182
+    }
+  },
+  "phone": {
+    "file": "footage/phone.mp4",
+    "width": 1032,
+    "height": 2160,
+    "duration": 105.039,
+    "t0": 1794699350.687,
+    "viewport": {
+      "width": 1032,
+      "height": 2160
+    },
+    "events": {
+      "name-sheet": 0.795,
+      "named": 6.412,
+      "mission-open": 11.042,
+      "mission-closed": 16.396,
+      "walk-start": 17.3,
+      "walk-end": 42.806,
+      "capture-open": 49.03,
+      "photo-set": 52.186,
+      "voice-step": 56.379,
+      "rec-start": 59.246,
+      "rec-stop": 69.617,
+      "transcript": 74.251,
+      "tucked": 76.78,
+      "result": 76.785,
+      "back-to-map": 81.894,
+      "atlas": 87.908,
+      "echo-open": 93.629,
+      "echo-revealed": 98.239,
+      "echo-closed": 103.538
+    }
+  },
+  "phone2": {
+    "file": "footage/phone2.mp4",
+    "width": 1032,
+    "height": 2160,
+    "duration": 52.613,
+    "t0": 1794699468.22,
+    "viewport": {
+      "width": 1032,
+      "height": 2160
+    },
+    "events": {
+      "detail": 0.001,
+      "charts": 6.68,
+      "capsules": 10.575,
+      "capsule-play": 14.428,
+      "builder": 19.316,
+      "picked": 24.086,
+      "mission-sent": 31.291,
+      "mission-landed": 32.09,
+      "phone-mission-open": 36.205,
+      "nudge-sent": 47.323,
+      "nudge-landed": 48.107
+    }
+  },
+  "stage": {
+    "file": "footage/stage.mp4",
+    "width": 2880,
+    "height": 1620,
+    "duration": 42.973,
+    "t0": 1794698994.41,
+    "viewport": {
+      "width": 2880,
+      "height": 1620
+    },
+    "events": {
+      "slide:2": 4.792,
+      "slide:3": 9.944,
+      "slide:4": 14.909,
+      "slide:5": 19.875,
+      "slide:6": 24.824,
+      "slide:7": 29.709,
+      "slide:8": 34.639,
+      "slide:9": 39.573
+    }
+  }
+}

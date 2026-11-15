@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Animowany Piesek SVG – Komplet</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #E8D5C8;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #3E281C;
+    }
+
+    .canvas-box {
+      width: 100%;
+      max-width: 740px;
+      background: #F2E2D8;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(62, 40, 28, 0.12);
+      overflow: hidden;
+      border: 4px solid #FFF8F3;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .controls {
+      margin-top: 24px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 760px;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background: #FFF8F3;
+      color: #3E281C;
+      box-shadow: 0 4px 12px rgba(62, 40, 28, 0.08);
+      transition: all 0.25s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      background: #fff;
+    }
+
+    button.active {
+      background: #CE521A;
+      color: #FFF;
+      box-shadow: 0 6px 16px rgba(206, 82, 26, 0.35);
+    }
+
+    /* Wspólny układ współrzędnych płótna (1024x768) */
+    #dog-root, #body-group, #head-group, #tail, 
+    #leg-front-near, #leg-front-far, #leg-back-near, #leg-back-far, 
+    #medal, #shadow, #confetti {
+      transform-box: view-box;
+    }
+
+    /* Wyrównane stawy dla wszystkich 4 nóg i części ciała */
+    #dog-root       { transform-origin: 512px 540px; }
+    #body-group     { transform-origin: 512px 460px; }
+    #head-group     { transform-origin: 355px 335px; }
+    #tail           { transform-origin: 730px 365px; }
+    #leg-front-far  { transform-origin: 365px 490px; } /* 1. od lewej */
+    #leg-front-near { transform-origin: 400px 495px; } /* 2. od lewej */
+    #leg-back-far   { transform-origin: 625px 510px; } /* 3. od lewej – odwrócona krzywizna w prawo */
+    #leg-back-near  { transform-origin: 696px 510px; } /* 4. od lewej */
+    #medal          { transform-origin: 294px 378px; }
+    #shadow         { transform-origin: 550px 684px; }
+    #confetti       { transform-origin: 512px 160px; opacity: 0; pointer-events: none; }
+
+    /* =========================================================
+       0. STAN: BEZ ANIMACJI (STATYCZNY)
+       ========================================================= */
+    .state-static * {
+      animation: none !important;
+      transform: none !important;
+    }
+    .state-static #confetti {
+      opacity: 0 !important;
+    }
+
+    /* =========================================================
+       1. STAN: PIES IDZIE (SPOKOJNY, PŁYNNY CHÓD)
+       ========================================================= */
+    .state-walk #dog-root {
+      animation: walk-bob 0.85s ease-in-out infinite alternate;
+    }
+    .state-walk #head-group {
+      animation: walk-head 0.85s ease-in-out infinite alternate;
+    }
+    .state-walk #tail {
+      animation: walk-tail 0.85s ease-in-out infinite alternate;
+    }
+    .state-walk #medal {
+      animation: walk-medal 0.85s ease-in-out infinite alternate;
+    }
+    .state-walk #leg-front-near {
+      animation: walk-leg-a 1.7s ease-in-out infinite;
+    }
+    .state-walk #leg-back-far {
+      animation: walk-leg-a 1.7s ease-in-out infinite;
+    }
+    .state-walk #leg-front-far {
+      animation: walk-leg-b 1.7s ease-in-out infinite;
+    }
+    .state-walk #leg-back-near {
+      animation: walk-leg-b 1.7s ease-in-out infinite;
+    }
+    .state-walk #shadow {
+      animation: walk-shadow 0.85s ease-in-out infinite alternate;
+    }
+
+    @keyframes walk-bob {
+      0%   { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+    @keyframes walk-head {
+      0%   { transform: rotate(-2deg); }
+      100% { transform: rotate(2.5deg); }
+    }
+    @keyframes walk-tail {
+      0%   { transform: rotate(-5deg); }
+      100% { transform: rotate(7deg); }
+    }
+    @keyframes walk-medal {
+      0%   { transform: rotate(-9deg); }
+      100% { transform: rotate(8deg); }
+    }
+    @keyframes walk-leg-a {
+      0%   { transform: rotate(-18deg) translateY(-3px); }
+      50%  { transform: rotate(18deg) translateY(0px); }
+      100% { transform: rotate(-18deg) translateY(-3px); }
+    }
+    @keyframes walk-leg-b {
+      0%   { transform: rotate(18deg) translateY(0px); }
+      50%  { transform: rotate(-18deg) translateY(-3px); }
+      100% { transform: rotate(18deg) translateY(0px); }
+    }
+    @keyframes walk-shadow {
+      0%   { transform: scaleX(1); opacity: 0.9; }
+      100% { transform: scaleX(0.94); opacity: 0.75; }
+    }
+
+    /* =========================================================
+       2. STAN: PIES STOI I SPOKOJNIE MACHA OGONEM
+       ========================================================= */
+    .state-idle #dog-root {
+      transform: translateY(42px);
+    }
+    .state-idle #leg-front-far  { transform: rotate(22deg); }
+    .state-idle #leg-front-near { transform: rotate(-16deg); }
+    .state-idle #leg-back-far   { transform: rotate(-16deg); }
+    .state-idle #leg-back-near  { transform: rotate(-16deg); }
+
+    .state-idle #body-group {
+      animation: idle-breathe 2.4s ease-in-out infinite alternate;
+    }
+    .state-idle #head-group {
+      animation: idle-head 2.4s ease-in-out infinite alternate;
+    }
+    .state-idle #tail {
+      animation: idle-wag 0.55s ease-in-out infinite alternate;
+    }
+    .state-idle #medal {
+      animation: idle-medal 2.4s ease-in-out infinite alternate;
+    }
+
+    @keyframes idle-breathe {
+      0%   { transform: scaleY(1); }
+      100% { transform: scaleY(1.015); }
+    }
+    @keyframes idle-head {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(-3.5deg); }
+    }
+    @keyframes idle-wag {
+      0%   { transform: rotate(-9deg); }
+      100% { transform: rotate(15deg); }
+    }
+    @keyframes idle-medal {
+      0%   { transform: rotate(-2deg); }
+      100% { transform: rotate(4deg); }
+    }
+
+    /* =========================================================
+       3. STAN: WYGRANA – PIES CIESZY SIĘ I SKACZE
+       ========================================================= */
+    .state-win #dog-root {
+      animation: win-jump 1.3s ease-in-out infinite;
+    }
+    .state-win #body-group {
+      animation: win-tilt 1.3s ease-in-out infinite;
+    }
+    .state-win #head-group {
+      animation: win-head 1.3s ease-in-out infinite;
+    }
+    .state-win #tail {
+      animation: win-tail 0.35s ease-in-out infinite alternate;
+    }
+    .state-win #leg-front-near {
+      animation: win-front-near 1.3s ease-in-out infinite;
+    }
+    .state-win #leg-front-far {
+      animation: win-front-far 1.3s ease-in-out infinite;
+    }
+    .state-win #leg-back-near,
+    .state-win #leg-back-far {
+      animation: win-back-legs 1.3s ease-in-out infinite;
+    }
+    .state-win #medal {
+      animation: win-medal 1.3s ease-in-out infinite;
+    }
+    .state-win #shadow {
+      animation: win-shadow 1.3s ease-in-out infinite;
+    }
+    .state-win #confetti {
+      opacity: 1;
+      animation: confetti-float 2.6s ease-in-out infinite;
+    }
+
+    @keyframes win-jump {
+      0%, 100% { transform: translateY(34px) scaleY(0.95) scaleX(1.03); }
+      18%      { transform: translateY(42px) scaleY(0.91) scaleX(1.05); }
+      52%      { transform: translateY(-65px) scaleY(1.02) scaleX(0.99); }
+      85%      { transform: translateY(34px) scaleY(0.96) scaleX(1.02); }
+    }
+    @keyframes win-tilt {
+      0%, 18%, 100% { transform: rotate(0deg); }
+      52%           { transform: rotate(-8deg); }
+    }
+    @keyframes win-head {
+      0%, 18%, 100% { transform: rotate(0deg); }
+      52%           { transform: rotate(-9deg); }
+    }
+    @keyframes win-tail {
+      0%   { transform: rotate(-10deg); }
+      100% { transform: rotate(18deg); }
+    }
+    @keyframes win-front-near {
+      0%, 18%, 100% { transform: rotate(-14deg); }
+      52%           { transform: rotate(28deg); }
+    }
+    @keyframes win-front-far {
+      0%, 18%, 100% { transform: rotate(18deg); }
+      52%           { transform: rotate(42deg); }
+    }
+    @keyframes win-back-legs {
+      0%, 18%, 100% { transform: rotate(-10deg); }
+      52%           { transform: rotate(-28deg); }
+    }
+    @keyframes win-medal {
+      0%, 18%, 100% { transform: rotate(0deg); }
+      52%           { transform: rotate(24deg); }
+    }
+    @keyframes win-shadow {
+      0%, 18%, 100% { transform: scaleX(1.05); opacity: 0.9; }
+      52%           { transform: scaleX(0.65); opacity: 0.4; }
+    }
+    @keyframes confetti-float {
+      0%   { transform: translateY(25px) scale(0.9); opacity: 0; }
+      25%  { opacity: 1; }
+      80%  { opacity: 1; }
+      100% { transform: translateY(-35px) scale(1.05); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="canvas-box">
+    <svg id="scene" class="state-static" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+      <!-- Tło -->
+      <rect width="1024" height="768" fill="#F2E2D8" />
+
+      <!-- Konfetti i gwiazdki (widoczne podczas wygranej) -->
+      <g id="confetti">
+        <polygon points="240,120 247,138 266,138 251,149 256,167 240,156 224,167 229,149 214,138 233,138" fill="#F4B43A" />
+        <polygon points="560,95 565,108 579,108 568,116 572,129 560,121 548,129 552,116 541,108 555,108" fill="#F4B43A" />
+        <polygon points="820,135 826,150 842,150 829,159 834,174 820,165 806,174 811,159 798,150 814,150" fill="#CE521A" />
+        <rect x="330" y="75" width="16" height="8" rx="4" fill="#779662" transform="rotate(-25 330 75)" />
+        <rect x="470" y="130" width="18" height="8" rx="4" fill="#CE521A" transform="rotate(35 470 130)" />
+        <rect x="690" y="85" width="16" height="8" rx="4" fill="#779662" transform="rotate(20 690 85)" />
+        <circle cx="190" cy="185" r="7" fill="#779662" />
+        <circle cx="630" cy="145" r="6" fill="#F4B43A" />
+        <circle cx="870" cy="210" r="8" fill="#779662" />
+      </g>
+
+      <!-- Cień pod pieskiem -->
+      <line id="shadow" x1="318" y1="684" x2="785" y2="684" stroke="#C5B6B0" stroke-width="14" stroke-linecap="round" />
+
+      <!-- Główna grupa pieska -->
+      <g id="dog-root">
+        
+        <!-- 3. noga od lewej: Tylna dalsza łapa (zakrzywiona w prawo, tak samo jak prawa tylna) -->
+        <path id="leg-back-far" d="M 605 495 C 605 478, 645 478, 645 495 L 645 518 C 647 544, 659 570, 687 588 C 709 602, 695 632, 675 622 C 635 602, 611 568, 605 518 Z" fill="#B64212" />
+
+        <!-- 1. noga od lewej: Przednia dalsza łapa -->
+        <path id="leg-front-far" d="M 345 465 C 355 450, 395 465, 385 485 L 385 505 C 355 522, 335 548, 336 584 C 336 610, 300 612, 296 588 C 290 542, 310 502, 342 475 Z" fill="#B64212" />
+
+        <!-- Ogon -->
+        <g id="tail">
+          <path d="M 718 392 C 775 398, 818 385, 852 330 C 835 335, 822 334, 815 330 C 838 318, 852 302, 856 282 C 842 292, 830 296, 822 295 C 842 268, 848 238, 840 212 C 830 225, 820 232, 812 232 C 815 208, 800 194, 760 186 C 766 196, 768 204, 766 208 C 732 188, 692 188, 662 204 C 672 206, 680 210, 684 214 C 655 222, 640 236, 634 256 C 644 252, 654 250, 660 252 C 636 274, 628 302, 636 326 C 640 316, 644 310, 648 308 C 646 332, 654 348, 672 356 C 668 346, 668 338, 670 334 C 676 352, 686 362, 695 365 C 686 335, 692 310, 725 308 C 750 308, 755 335, 738 352 L 710 375 Z" fill="#ECC196" />
+          <path d="M 692 315 C 688 288, 706 260, 738 258 C 775 256, 792 288, 785 322 C 792 316, 798 310, 802 302 C 806 322, 798 338, 784 348 C 790 348, 795 346, 799 343 C 792 362, 772 376, 745 380 L 725 345 C 744 346, 752 330, 742 316 C 730 302, 704 304, 692 315 Z" fill="#CE521A" />
+        </g>
+
+        <!-- Tułów + Szyja + Głowa -->
+        <g id="body-group">
+          <!-- Tułów -->
+          <path d="M 284 328 L 462 325 L 652 328 C 725 330, 772 380, 772 442 C 772 505, 722 548, 650 548 L 432 548 C 350 548, 292 495, 292 415 Z" fill="#CE521A" />
+          <!-- Kremowa klatka piersiowa -->
+          <path d="M 286 332 L 292 422 C 294 468, 314 504, 348 525 C 374 492, 384 445, 378 392 L 378 328 Z" fill="#F8F3EC" />
+
+          <!-- Głowa i uszy -->
+          <g id="head-group">
+            <!-- Tylne ucho -->
+            <path d="M 288 168 L 296 86 C 297 80, 303 80, 307 85 L 355 152 Z" fill="#BC4413" />
+            <!-- Głowa baza -->
+            <path d="M 185 245 L 246 226 C 254 195, 266 172, 294 162 L 348 148 L 386 80 C 390 73, 398 74, 401 82 L 422 162 L 468 350 L 284 365 C 283 312, 272 306, 255 306 L 202 306 C 182 306, 174 292, 176 274 Z" fill="#CE521A" />
+            <!-- Kremowy pysk -->
+            <path d="M 176 274 C 175 294, 185 307, 206 307 L 258 307 C 276 307, 285 316, 286 362 L 378 348 L 378 305 C 378 272, 360 256, 326 256 L 198 260 Z" fill="#F8F3EC" />
+            <!-- Wnętrze przedniego ucha -->
+            <path d="M 350 156 L 386 98 L 395 186 Z" fill="#ECC196" />
+            <!-- Oko -->
+            <path d="M 282 232 C 284 214, 308 214, 311 232" fill="none" stroke="#3E281C" stroke-width="8" stroke-linecap="round" />
+            <!-- Nosek -->
+            <path d="M 164 245 C 178 242, 198 243, 202 254 C 206 266, 192 281, 174 282 C 162 282, 156 268, 158 254 C 159 248, 161 246, 164 245 Z" fill="#3E281C" />
+          </g>
+
+          <!-- Obroża -->
+          <path d="M 284 352 C 345 344, 405 324, 460 296 C 465 294, 468 298, 470 304 L 473 316 C 474 320, 471 324, 466 326 C 410 355, 348 375, 286 382 C 281 382, 279 378, 279 373 L 279 359 C 279 355, 281 353, 284 352 Z" fill="#3E281C" />
+
+          <!-- Medalion (adresówka) -->
+          <g id="medal">
+            <line x1="294" y1="378" x2="294" y2="394" stroke="#6E7A65" stroke-width="4" stroke-linecap="round" />
+            <circle cx="294" cy="408" r="17" fill="#779662" stroke="#5E794C" stroke-width="1.5" />
+          </g>
+        </g>
+
+        <!-- 2. noga od lewej: Przednia bliższa łapa -->
+        <path id="leg-front-near" d="M 380 472 C 380 455, 422 455, 422 472 L 422 486 C 424 525, 438 556, 470 576 C 492 590, 476 620, 456 610 C 412 588, 386 546, 380 486 Z" fill="#CE521A" />
+
+        <!-- 4. noga od lewej: Tylna bliższa łapa -->
+        <path id="leg-back-near" d="M 678 495 C 678 478, 718 478, 718 495 L 718 518 C 720 544, 732 570, 760 588 C 782 602, 768 632, 748 622 C 708 602, 684 568, 678 518 Z" fill="#CE521A" />
+
+      </g>
+    </svg>
+  </div>
+
+  <div class="controls">
+    <button class="active" onclick="setState('state-static', this)">0. Bez animacji</button>
+    <button onclick="setState('state-walk', this)">1. Pies idzie</button>
+    <button onclick="setState('state-idle', this)">2. Stoi i macha ogonem</button>
+    <button onclick="setState('state-win', this)">3. Wygrywa i skacze!</button>
+  </div>
+
+  <script>
+    function setState(stateClass, btn) {
+      const svg = document.getElementById('scene');
+      svg.setAttribute('class', stateClass);
+      
+      document.querySelectorAll('.controls button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

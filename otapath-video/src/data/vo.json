@@ -1,0 +1,172 @@
+{
+  "lines": [
+    {
+      "id": "hook-1",
+      "section": "hook",
+      "text": "TMS therapy can lift people out of severe depression.",
+      "start": 0.6,
+      "duration": 3.371
+    },
+    {
+      "id": "hook-2",
+      "section": "hook",
+      "text": "Then they're sent home — alone.",
+      "start": 4.25,
+      "duration": 1.689
+    },
+    {
+      "id": "hook-3",
+      "section": "hook",
+      "text": "Within a year, roughly one in three relapses.",
+      "start": 6.3,
+      "duration": 2.375
+    },
+    {
+      "id": "hook-4",
+      "section": "hook",
+      "text": "And the warning signs? Nobody is watching.",
+      "start": 9.1,
+      "duration": 2.372
+    },
+    {
+      "id": "sol-1",
+      "section": "solution",
+      "text": "Meet OtaPath: a warm walking companion for the fragile weeks after treatment.",
+      "start": 12.15,
+      "duration": 4.646
+    },
+    {
+      "id": "sol-2",
+      "section": "solution",
+      "text": "No questionnaires. No streaks. No guilt.",
+      "start": 16.95,
+      "duration": 2.5
+    },
+    {
+      "id": "sol-3",
+      "section": "solution",
+      "text": "Just tiny real-world quests — while voice, photos and movement quietly keep the care team in the loop.",
+      "start": 19.6,
+      "duration": 5.726
+    },
+    {
+      "id": "f1-1",
+      "section": "feature1",
+      "text": "Feature one: the map is the game.",
+      "start": 26,
+      "duration": 1.9
+    },
+    {
+      "id": "f1-2",
+      "section": "feature1",
+      "text": "Matti opens the app, meets his walking buddy, and finds a gentle quest prescribed by his own doctor.",
+      "start": 28.3,
+      "duration": 5.822
+    },
+    {
+      "id": "f1-3",
+      "section": "feature1",
+      "text": "Every step outside clears golden mist from his real neighborhood.",
+      "start": 35,
+      "duration": 3.261
+    },
+    {
+      "id": "f1-4",
+      "section": "feature1",
+      "text": "There's nothing to fail — only streets to rediscover.",
+      "start": 39.6,
+      "duration": 2.89
+    },
+    {
+      "id": "f2-1",
+      "section": "feature2",
+      "text": "Feature two: memory capsules.",
+      "start": 47.8,
+      "duration": 1.84
+    },
+    {
+      "id": "f2-2",
+      "section": "feature2",
+      "text": "At the park, he snaps one vivid thing and leaves a ten-second voice note.",
+      "start": 50.1,
+      "duration": 3.924
+    },
+    {
+      "id": "f2-3",
+      "section": "feature2",
+      "text": "Under the hood, OtaPath reads the pitch and energy of his voice, the color and light of his photo, and the richness of his words.",
+      "start": 54.9,
+      "duration": 7.163
+    },
+    {
+      "id": "f2-4",
+      "section": "feature2",
+      "text": "No forms. He just made a memory — pinned to the map.",
+      "start": 63.2,
+      "duration": 2.885
+    },
+    {
+      "id": "f3-1",
+      "section": "feature3",
+      "text": "Feature three: the clinician's side of the loop.",
+      "start": 71.8,
+      "duration": 2.348
+    },
+    {
+      "id": "f3-2",
+      "section": "feature3",
+      "text": "Dr. Lindqvist's dashboard had already flagged Matti's quiet slide.",
+      "start": 74.6,
+      "duration": 3.601
+    },
+    {
+      "id": "f3-3",
+      "section": "feature3",
+      "text": "Today's capsule pulls his curves back up.",
+      "start": 79.1,
+      "duration": 2.211
+    },
+    {
+      "id": "f3-4",
+      "section": "feature3",
+      "text": "She plays his voice note, prescribes his next quest, sends a warm check-in — and seconds later, it lands on his phone.",
+      "start": 82.3,
+      "duration": 6.617
+    },
+    {
+      "id": "diff-1",
+      "section": "difference",
+      "text": "OtaPath never asks how you feel — it notices.",
+      "start": 95.5,
+      "duration": 2.837
+    },
+    {
+      "id": "diff-2",
+      "section": "difference",
+      "text": "Every signal is compared to the patient's own baseline, and a learning loop tracks which places lift each person.",
+      "start": 98.7,
+      "duration": 6.13
+    },
+    {
+      "id": "diff-3",
+      "section": "difference",
+      "text": "Built in a single hackathon: a real app, a real backend, a real closed loop.",
+      "start": 105.1,
+      "duration": 4.646
+    },
+    {
+      "id": "end-1",
+      "section": "ending",
+      "text": "OtaPath. From hospital discharge to lasting recovery — one small walk at a time.",
+      "start": 110.9,
+      "duration": 5.035
+    },
+    {
+      "id": "end-2",
+      "section": "ending",
+      "text": "Step outside. Feel brighter.",
+      "start": 116.5,
+      "duration": 1.682
+    }
+  ]
+}

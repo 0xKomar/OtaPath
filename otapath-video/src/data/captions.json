@@ -1,0 +1,1881 @@
+[
+ {
+  "text": "TMS",
+  "startMs": 600,
+  "endMs": 1300,
+  "timestampMs": 950,
+  "confidence": null
+ },
+ {
+  "text": " therapy",
+  "startMs": 1300,
+  "endMs": 1760,
+  "timestampMs": 1530,
+  "confidence": null
+ },
+ {
+  "text": " can",
+  "startMs": 1760,
+  "endMs": 2240,
+  "timestampMs": 2000,
+  "confidence": null
+ },
+ {
+  "text": " lift",
+  "startMs": 2240,
+  "endMs": 2440,
+  "timestampMs": 2340,
+  "confidence": null
+ },
+ {
+  "text": " people",
+  "startMs": 2440,
+  "endMs": 2780,
+  "timestampMs": 2610,
+  "confidence": null
+ },
+ {
+  "text": " out",
+  "startMs": 2780,
+  "endMs": 2960,
+  "timestampMs": 2870,
+  "confidence": null
+ },
+ {
+  "text": " of",
+  "startMs": 2960,
+  "endMs": 3100,
+  "timestampMs": 3030,
+  "confidence": null
+ },
+ {
+  "text": " severe",
+  "startMs": 3100,
+  "endMs": 3320,
+  "timestampMs": 3210,
+  "confidence": null
+ },
+ {
+  "text": " depression.",
+  "startMs": 3320,
+  "endMs": 3700,
+  "timestampMs": 3510,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Then",
+  "startMs": 4250,
+  "endMs": 4370,
+  "timestampMs": 4310,
+  "confidence": null
+ },
+ {
+  "text": " they're",
+  "startMs": 4370,
+  "endMs": 4550,
+  "timestampMs": 4460,
+  "confidence": null
+ },
+ {
+  "text": " sent",
+  "startMs": 4550,
+  "endMs": 4750,
+  "timestampMs": 4650,
+  "confidence": null
+ },
+ {
+  "text": " home —",
+  "startMs": 4750,
+  "endMs": 5330,
+  "timestampMs": 5040,
+  "confidence": null
+ },
+ {
+  "text": " alone.",
+  "startMs": 5330,
+  "endMs": 5650,
+  "timestampMs": 5490,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Within",
+  "startMs": 6300,
+  "endMs": 6460,
+  "timestampMs": 6380,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 6460,
+  "endMs": 6600,
+  "timestampMs": 6530,
+  "confidence": null
+ },
+ {
+  "text": " year,",
+  "startMs": 6600,
+  "endMs": 7100,
+  "timestampMs": 6850,
+  "confidence": null
+ },
+ {
+  "text": " roughly",
+  "startMs": 7100,
+  "endMs": 7260,
+  "timestampMs": 7180,
+  "confidence": null
+ },
+ {
+  "text": " one",
+  "startMs": 7260,
+  "endMs": 7540,
+  "timestampMs": 7400,
+  "confidence": null
+ },
+ {
+  "text": " in",
+  "startMs": 7540,
+  "endMs": 7740,
+  "timestampMs": 7640,
+  "confidence": null
+ },
+ {
+  "text": " three",
+  "startMs": 7740,
+  "endMs": 7940,
+  "timestampMs": 7840,
+  "confidence": null
+ },
+ {
+  "text": " relapses.",
+  "startMs": 7940,
+  "endMs": 8380,
+  "timestampMs": 8160,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "And",
+  "startMs": 9100,
+  "endMs": 9200,
+  "timestampMs": 9150,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 9200,
+  "endMs": 9300,
+  "timestampMs": 9250,
+  "confidence": null
+ },
+ {
+  "text": " warning",
+  "startMs": 9300,
+  "endMs": 9540,
+  "timestampMs": 9420,
+  "confidence": null
+ },
+ {
+  "text": " signs?",
+  "startMs": 9540,
+  "endMs": 10420,
+  "timestampMs": 9980,
+  "confidence": null
+ },
+ {
+  "text": " Nobody",
+  "startMs": 10420,
+  "endMs": 10580,
+  "timestampMs": 10500,
+  "confidence": null
+ },
+ {
+  "text": " is",
+  "startMs": 10580,
+  "endMs": 10880,
+  "timestampMs": 10730,
+  "confidence": null
+ },
+ {
+  "text": " watching.",
+  "startMs": 10880,
+  "endMs": 11220,
+  "timestampMs": 11050,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Meet",
+  "startMs": 12150,
+  "endMs": 12390,
+  "timestampMs": 12270,
+  "confidence": null
+ },
+ {
+  "text": " OtaPath:",
+  "startMs": 12390,
+  "endMs": 13450,
+  "timestampMs": 12920,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 13450,
+  "endMs": 13570,
+  "timestampMs": 13510,
+  "confidence": null
+ },
+ {
+  "text": " warm",
+  "startMs": 13570,
+  "endMs": 13810,
+  "timestampMs": 13690,
+  "confidence": null
+ },
+ {
+  "text": " walking",
+  "startMs": 13810,
+  "endMs": 14150,
+  "timestampMs": 13980,
+  "confidence": null
+ },
+ {
+  "text": " companion",
+  "startMs": 14150,
+  "endMs": 14650,
+  "timestampMs": 14400,
+  "confidence": null
+ },
+ {
+  "text": " for",
+  "startMs": 14650,
+  "endMs": 15050,
+  "timestampMs": 14850,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 15050,
+  "endMs": 15150,
+  "timestampMs": 15100,
+  "confidence": null
+ },
+ {
+  "text": " fragile",
+  "startMs": 15150,
+  "endMs": 15530,
+  "timestampMs": 15340,
+  "confidence": null
+ },
+ {
+  "text": " weeks",
+  "startMs": 15530,
+  "endMs": 15850,
+  "timestampMs": 15690,
+  "confidence": null
+ },
+ {
+  "text": " after",
+  "startMs": 15850,
+  "endMs": 16230,
+  "timestampMs": 16040,
+  "confidence": null
+ },
+ {
+  "text": " treatment.",
+  "startMs": 16230,
+  "endMs": 16550,
+  "timestampMs": 16390,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "No",
+  "startMs": 16950,
+  "endMs": 17170,
+  "timestampMs": 17060,
+  "confidence": null
+ },
+ {
+  "text": " questionnaires.",
+  "startMs": 17170,
+  "endMs": 18190,
+  "timestampMs": 17680,
+  "confidence": null
+ },
+ {
+  "text": " No",
+  "startMs": 18190,
+  "endMs": 18290,
+  "timestampMs": 18240,
+  "confidence": null
+ },
+ {
+  "text": " streaks.",
+  "startMs": 18290,
+  "endMs": 18930,
+  "timestampMs": 18610,
+  "confidence": null
+ },
+ {
+  "text": " No",
+  "startMs": 18930,
+  "endMs": 19010,
+  "timestampMs": 18970,
+  "confidence": null
+ },
+ {
+  "text": " guilt.",
+  "startMs": 19010,
+  "endMs": 19250,
+  "timestampMs": 19130,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Just",
+  "startMs": 19600,
+  "endMs": 19840,
+  "timestampMs": 19720,
+  "confidence": null
+ },
+ {
+  "text": " tiny",
+  "startMs": 19840,
+  "endMs": 20400,
+  "timestampMs": 20120,
+  "confidence": null
+ },
+ {
+  "text": " real-world",
+  "startMs": 20400,
+  "endMs": 20880,
+  "timestampMs": 20640,
+  "confidence": null
+ },
+ {
+  "text": " quests —",
+  "startMs": 20880,
+  "endMs": 21640,
+  "timestampMs": 21260,
+  "confidence": null
+ },
+ {
+  "text": " while",
+  "startMs": 21640,
+  "endMs": 21860,
+  "timestampMs": 21750,
+  "confidence": null
+ },
+ {
+  "text": " voice,",
+  "startMs": 21860,
+  "endMs": 22440,
+  "timestampMs": 22150,
+  "confidence": null
+ },
+ {
+  "text": " photos",
+  "startMs": 22440,
+  "endMs": 22980,
+  "timestampMs": 22710,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 22980,
+  "endMs": 23060,
+  "timestampMs": 23020,
+  "confidence": null
+ },
+ {
+  "text": " movement",
+  "startMs": 23060,
+  "endMs": 23380,
+  "timestampMs": 23220,
+  "confidence": null
+ },
+ {
+  "text": " quietly",
+  "startMs": 23380,
+  "endMs": 23820,
+  "timestampMs": 23600,
+  "confidence": null
+ },
+ {
+  "text": " keep",
+  "startMs": 23820,
+  "endMs": 24180,
+  "timestampMs": 24000,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 24180,
+  "endMs": 24320,
+  "timestampMs": 24250,
+  "confidence": null
+ },
+ {
+  "text": " care",
+  "startMs": 24320,
+  "endMs": 24480,
+  "timestampMs": 24400,
+  "confidence": null
+ },
+ {
+  "text": " team",
+  "startMs": 24480,
+  "endMs": 24720,
+  "timestampMs": 24600,
+  "confidence": null
+ },
+ {
+  "text": " in",
+  "startMs": 24720,
+  "endMs": 24880,
+  "timestampMs": 24800,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 24880,
+  "endMs": 24960,
+  "timestampMs": 24920,
+  "confidence": null
+ },
+ {
+  "text": " loop.",
+  "startMs": 24960,
+  "endMs": 25140,
+  "timestampMs": 25050,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Feature",
+  "startMs": 26000,
+  "endMs": 26202,
+  "timestampMs": 26101,
+  "confidence": null
+ },
+ {
+  "text": " one:",
+  "startMs": 26202,
+  "endMs": 26892,
+  "timestampMs": 26547,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 26892,
+  "endMs": 26998,
+  "timestampMs": 26945,
+  "confidence": null
+ },
+ {
+  "text": " map",
+  "startMs": 26998,
+  "endMs": 27185,
+  "timestampMs": 27091,
+  "confidence": null
+ },
+ {
+  "text": " is",
+  "startMs": 27185,
+  "endMs": 27326,
+  "timestampMs": 27255,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 27326,
+  "endMs": 27459,
+  "timestampMs": 27393,
+  "confidence": null
+ },
+ {
+  "text": " game.",
+  "startMs": 27459,
+  "endMs": 27680,
+  "timestampMs": 27570,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Matti",
+  "startMs": 28300,
+  "endMs": 28660,
+  "timestampMs": 28480,
+  "confidence": null
+ },
+ {
+  "text": " opens",
+  "startMs": 28660,
+  "endMs": 28960,
+  "timestampMs": 28810,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 28960,
+  "endMs": 29140,
+  "timestampMs": 29050,
+  "confidence": null
+ },
+ {
+  "text": " app,",
+  "startMs": 29140,
+  "endMs": 29680,
+  "timestampMs": 29410,
+  "confidence": null
+ },
+ {
+  "text": " meets",
+  "startMs": 29680,
+  "endMs": 29880,
+  "timestampMs": 29780,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 29880,
+  "endMs": 30100,
+  "timestampMs": 29990,
+  "confidence": null
+ },
+ {
+  "text": " walking",
+  "startMs": 30100,
+  "endMs": 30420,
+  "timestampMs": 30260,
+  "confidence": null
+ },
+ {
+  "text": " buddy,",
+  "startMs": 30420,
+  "endMs": 30940,
+  "timestampMs": 30680,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 30940,
+  "endMs": 31040,
+  "timestampMs": 30990,
+  "confidence": null
+ },
+ {
+  "text": " finds",
+  "startMs": 31040,
+  "endMs": 31280,
+  "timestampMs": 31160,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 31280,
+  "endMs": 31440,
+  "timestampMs": 31360,
+  "confidence": null
+ },
+ {
+  "text": " gentle",
+  "startMs": 31440,
+  "endMs": 31720,
+  "timestampMs": 31580,
+  "confidence": null
+ },
+ {
+  "text": " quest",
+  "startMs": 31720,
+  "endMs": 32480,
+  "timestampMs": 32100,
+  "confidence": null
+ },
+ {
+  "text": " prescribed",
+  "startMs": 32480,
+  "endMs": 32900,
+  "timestampMs": 32690,
+  "confidence": null
+ },
+ {
+  "text": " by",
+  "startMs": 32900,
+  "endMs": 33200,
+  "timestampMs": 33050,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 33200,
+  "endMs": 33340,
+  "timestampMs": 33270,
+  "confidence": null
+ },
+ {
+  "text": " own",
+  "startMs": 33340,
+  "endMs": 33560,
+  "timestampMs": 33450,
+  "confidence": null
+ },
+ {
+  "text": " doctor.",
+  "startMs": 33560,
+  "endMs": 33900,
+  "timestampMs": 33730,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Every",
+  "startMs": 35000,
+  "endMs": 35240,
+  "timestampMs": 35120,
+  "confidence": null
+ },
+ {
+  "text": " step",
+  "startMs": 35240,
+  "endMs": 35480,
+  "timestampMs": 35360,
+  "confidence": null
+ },
+ {
+  "text": " outside",
+  "startMs": 35480,
+  "endMs": 35880,
+  "timestampMs": 35680,
+  "confidence": null
+ },
+ {
+  "text": " clears",
+  "startMs": 35880,
+  "endMs": 36280,
+  "timestampMs": 36080,
+  "confidence": null
+ },
+ {
+  "text": " golden",
+  "startMs": 36280,
+  "endMs": 36740,
+  "timestampMs": 36510,
+  "confidence": null
+ },
+ {
+  "text": " mist",
+  "startMs": 36740,
+  "endMs": 37080,
+  "timestampMs": 36910,
+  "confidence": null
+ },
+ {
+  "text": " from",
+  "startMs": 37080,
+  "endMs": 37320,
+  "timestampMs": 37200,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 37320,
+  "endMs": 37460,
+  "timestampMs": 37390,
+  "confidence": null
+ },
+ {
+  "text": " real",
+  "startMs": 37460,
+  "endMs": 37700,
+  "timestampMs": 37580,
+  "confidence": null
+ },
+ {
+  "text": " neighborhood.",
+  "startMs": 37700,
+  "endMs": 37980,
+  "timestampMs": 37840,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "There's",
+  "startMs": 39600,
+  "endMs": 39840,
+  "timestampMs": 39720,
+  "confidence": null
+ },
+ {
+  "text": " nothing",
+  "startMs": 39840,
+  "endMs": 40020,
+  "timestampMs": 39930,
+  "confidence": null
+ },
+ {
+  "text": " to",
+  "startMs": 40020,
+  "endMs": 40240,
+  "timestampMs": 40130,
+  "confidence": null
+ },
+ {
+  "text": " fail —",
+  "startMs": 40240,
+  "endMs": 41040,
+  "timestampMs": 40640,
+  "confidence": null
+ },
+ {
+  "text": " only",
+  "startMs": 41040,
+  "endMs": 41140,
+  "timestampMs": 41090,
+  "confidence": null
+ },
+ {
+  "text": " streets",
+  "startMs": 41140,
+  "endMs": 41480,
+  "timestampMs": 41310,
+  "confidence": null
+ },
+ {
+  "text": " to",
+  "startMs": 41480,
+  "endMs": 41740,
+  "timestampMs": 41610,
+  "confidence": null
+ },
+ {
+  "text": " rediscover.",
+  "startMs": 41740,
+  "endMs": 42200,
+  "timestampMs": 41970,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Feature",
+  "startMs": 47800,
+  "endMs": 47965,
+  "timestampMs": 47883,
+  "confidence": null
+ },
+ {
+  "text": " two:",
+  "startMs": 47965,
+  "endMs": 48679,
+  "timestampMs": 48322,
+  "confidence": null
+ },
+ {
+  "text": " memory",
+  "startMs": 48679,
+  "endMs": 48882,
+  "timestampMs": 48780,
+  "confidence": null
+ },
+ {
+  "text": " capsules.",
+  "startMs": 48882,
+  "endMs": 49340,
+  "timestampMs": 49111,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "At",
+  "startMs": 50100,
+  "endMs": 50218,
+  "timestampMs": 50159,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 50218,
+  "endMs": 50336,
+  "timestampMs": 50277,
+  "confidence": null
+ },
+ {
+  "text": " park,",
+  "startMs": 50336,
+  "endMs": 50782,
+  "timestampMs": 50559,
+  "confidence": null
+ },
+ {
+  "text": " he",
+  "startMs": 50782,
+  "endMs": 50872,
+  "timestampMs": 50827,
+  "confidence": null
+ },
+ {
+  "text": " snaps",
+  "startMs": 50872,
+  "endMs": 51125,
+  "timestampMs": 50999,
+  "confidence": null
+ },
+ {
+  "text": " one",
+  "startMs": 51125,
+  "endMs": 51407,
+  "timestampMs": 51266,
+  "confidence": null
+ },
+ {
+  "text": " vivid",
+  "startMs": 51407,
+  "endMs": 51678,
+  "timestampMs": 51542,
+  "confidence": null
+ },
+ {
+  "text": " thing",
+  "startMs": 51678,
+  "endMs": 51987,
+  "timestampMs": 51833,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 51987,
+  "endMs": 52394,
+  "timestampMs": 52191,
+  "confidence": null
+ },
+ {
+  "text": " leaves",
+  "startMs": 52394,
+  "endMs": 52658,
+  "timestampMs": 52526,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 52658,
+  "endMs": 52743,
+  "timestampMs": 52700,
+  "confidence": null
+ },
+ {
+  "text": " ten-second",
+  "startMs": 52743,
+  "endMs": 53328,
+  "timestampMs": 53036,
+  "confidence": null
+ },
+ {
+  "text": " voice",
+  "startMs": 53328,
+  "endMs": 53585,
+  "timestampMs": 53457,
+  "confidence": null
+ },
+ {
+  "text": " note.",
+  "startMs": 53585,
+  "endMs": 53860,
+  "timestampMs": 53722,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Under",
+  "startMs": 54900,
+  "endMs": 55120,
+  "timestampMs": 55010,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 55120,
+  "endMs": 55260,
+  "timestampMs": 55190,
+  "confidence": null
+ },
+ {
+  "text": " hood,",
+  "startMs": 55260,
+  "endMs": 55900,
+  "timestampMs": 55580,
+  "confidence": null
+ },
+ {
+  "text": " OtaPath",
+  "startMs": 55900,
+  "endMs": 56260,
+  "timestampMs": 56080,
+  "confidence": null
+ },
+ {
+  "text": " reads",
+  "startMs": 56260,
+  "endMs": 56580,
+  "timestampMs": 56420,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 56580,
+  "endMs": 56860,
+  "timestampMs": 56720,
+  "confidence": null
+ },
+ {
+  "text": " pitch",
+  "startMs": 56860,
+  "endMs": 57100,
+  "timestampMs": 56980,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 57100,
+  "endMs": 57340,
+  "timestampMs": 57220,
+  "confidence": null
+ },
+ {
+  "text": " energy",
+  "startMs": 57340,
+  "endMs": 57620,
+  "timestampMs": 57480,
+  "confidence": null
+ },
+ {
+  "text": " of",
+  "startMs": 57620,
+  "endMs": 57840,
+  "timestampMs": 57730,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 57840,
+  "endMs": 57960,
+  "timestampMs": 57900,
+  "confidence": null
+ },
+ {
+  "text": " voice,",
+  "startMs": 57960,
+  "endMs": 58800,
+  "timestampMs": 58380,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 58800,
+  "endMs": 58920,
+  "timestampMs": 58860,
+  "confidence": null
+ },
+ {
+  "text": " color",
+  "startMs": 58920,
+  "endMs": 59140,
+  "timestampMs": 59030,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 59140,
+  "endMs": 59380,
+  "timestampMs": 59260,
+  "confidence": null
+ },
+ {
+  "text": " light",
+  "startMs": 59380,
+  "endMs": 59560,
+  "timestampMs": 59470,
+  "confidence": null
+ },
+ {
+  "text": " of",
+  "startMs": 59560,
+  "endMs": 59720,
+  "timestampMs": 59640,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 59720,
+  "endMs": 59840,
+  "timestampMs": 59780,
+  "confidence": null
+ },
+ {
+  "text": " photo,",
+  "startMs": 59840,
+  "endMs": 60560,
+  "timestampMs": 60200,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 60560,
+  "endMs": 60720,
+  "timestampMs": 60640,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 60720,
+  "endMs": 60800,
+  "timestampMs": 60760,
+  "confidence": null
+ },
+ {
+  "text": " richness",
+  "startMs": 60800,
+  "endMs": 61080,
+  "timestampMs": 60940,
+  "confidence": null
+ },
+ {
+  "text": " of",
+  "startMs": 61080,
+  "endMs": 61400,
+  "timestampMs": 61240,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 61400,
+  "endMs": 61520,
+  "timestampMs": 61460,
+  "confidence": null
+ },
+ {
+  "text": " words.",
+  "startMs": 61520,
+  "endMs": 61760,
+  "timestampMs": 61640,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "No",
+  "startMs": 63200,
+  "endMs": 63380,
+  "timestampMs": 63290,
+  "confidence": null
+ },
+ {
+  "text": " forms.",
+  "startMs": 63380,
+  "endMs": 64180,
+  "timestampMs": 63780,
+  "confidence": null
+ },
+ {
+  "text": " He",
+  "startMs": 64180,
+  "endMs": 64320,
+  "timestampMs": 64250,
+  "confidence": null
+ },
+ {
+  "text": " just",
+  "startMs": 64320,
+  "endMs": 64460,
+  "timestampMs": 64390,
+  "confidence": null
+ },
+ {
+  "text": " made",
+  "startMs": 64460,
+  "endMs": 64620,
+  "timestampMs": 64540,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 64620,
+  "endMs": 64720,
+  "timestampMs": 64670,
+  "confidence": null
+ },
+ {
+  "text": " memory —",
+  "startMs": 64720,
+  "endMs": 65060,
+  "timestampMs": 64890,
+  "confidence": null
+ },
+ {
+  "text": " pinned",
+  "startMs": 65060,
+  "endMs": 65400,
+  "timestampMs": 65230,
+  "confidence": null
+ },
+ {
+  "text": " to",
+  "startMs": 65400,
+  "endMs": 65600,
+  "timestampMs": 65500,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 65600,
+  "endMs": 65700,
+  "timestampMs": 65650,
+  "confidence": null
+ },
+ {
+  "text": " map.",
+  "startMs": 65700,
+  "endMs": 65880,
+  "timestampMs": 65790,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Feature",
+  "startMs": 71800,
+  "endMs": 71979,
+  "timestampMs": 71889,
+  "confidence": null
+ },
+ {
+  "text": " three:",
+  "startMs": 71979,
+  "endMs": 72793,
+  "timestampMs": 72386,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 72793,
+  "endMs": 72955,
+  "timestampMs": 72874,
+  "confidence": null
+ },
+ {
+  "text": " clinician's",
+  "startMs": 72955,
+  "endMs": 73481,
+  "timestampMs": 73218,
+  "confidence": null
+ },
+ {
+  "text": " side",
+  "startMs": 73481,
+  "endMs": 73626,
+  "timestampMs": 73554,
+  "confidence": null
+ },
+ {
+  "text": " of",
+  "startMs": 73626,
+  "endMs": 73720,
+  "timestampMs": 73673,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 73720,
+  "endMs": 73799,
+  "timestampMs": 73759,
+  "confidence": null
+ },
+ {
+  "text": " loop.",
+  "startMs": 73799,
+  "endMs": 73960,
+  "timestampMs": 73879,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Dr.",
+  "startMs": 74600,
+  "endMs": 75060,
+  "timestampMs": 74830,
+  "confidence": null
+ },
+ {
+  "text": " Lindqvist's",
+  "startMs": 75060,
+  "endMs": 75500,
+  "timestampMs": 75280,
+  "confidence": null
+ },
+ {
+  "text": " dashboard",
+  "startMs": 75500,
+  "endMs": 75920,
+  "timestampMs": 75710,
+  "confidence": null
+ },
+ {
+  "text": " had",
+  "startMs": 75920,
+  "endMs": 76260,
+  "timestampMs": 76090,
+  "confidence": null
+ },
+ {
+  "text": " already",
+  "startMs": 76260,
+  "endMs": 76480,
+  "timestampMs": 76370,
+  "confidence": null
+ },
+ {
+  "text": " flagged",
+  "startMs": 76480,
+  "endMs": 76860,
+  "timestampMs": 76670,
+  "confidence": null
+ },
+ {
+  "text": " Matti's",
+  "startMs": 76860,
+  "endMs": 77360,
+  "timestampMs": 77110,
+  "confidence": null
+ },
+ {
+  "text": " quiet",
+  "startMs": 77360,
+  "endMs": 77580,
+  "timestampMs": 77470,
+  "confidence": null
+ },
+ {
+  "text": " slide.",
+  "startMs": 77580,
+  "endMs": 77960,
+  "timestampMs": 77770,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Today's",
+  "startMs": 79100,
+  "endMs": 79560,
+  "timestampMs": 79330,
+  "confidence": null
+ },
+ {
+  "text": " capsule",
+  "startMs": 79560,
+  "endMs": 79860,
+  "timestampMs": 79710,
+  "confidence": null
+ },
+ {
+  "text": " pulls",
+  "startMs": 79860,
+  "endMs": 80180,
+  "timestampMs": 80020,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 80180,
+  "endMs": 80400,
+  "timestampMs": 80290,
+  "confidence": null
+ },
+ {
+  "text": " curves",
+  "startMs": 80400,
+  "endMs": 80700,
+  "timestampMs": 80550,
+  "confidence": null
+ },
+ {
+  "text": " back",
+  "startMs": 80700,
+  "endMs": 80960,
+  "timestampMs": 80830,
+  "confidence": null
+ },
+ {
+  "text": " up.",
+  "startMs": 80960,
+  "endMs": 81180,
+  "timestampMs": 81070,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "She",
+  "startMs": 82300,
+  "endMs": 82460,
+  "timestampMs": 82380,
+  "confidence": null
+ },
+ {
+  "text": " plays",
+  "startMs": 82460,
+  "endMs": 82700,
+  "timestampMs": 82580,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 82700,
+  "endMs": 82920,
+  "timestampMs": 82810,
+  "confidence": null
+ },
+ {
+  "text": " voice",
+  "startMs": 82920,
+  "endMs": 83120,
+  "timestampMs": 83020,
+  "confidence": null
+ },
+ {
+  "text": " note,",
+  "startMs": 83120,
+  "endMs": 83660,
+  "timestampMs": 83390,
+  "confidence": null
+ },
+ {
+  "text": " prescribes",
+  "startMs": 83660,
+  "endMs": 84120,
+  "timestampMs": 83890,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 84120,
+  "endMs": 84280,
+  "timestampMs": 84200,
+  "confidence": null
+ },
+ {
+  "text": " next",
+  "startMs": 84280,
+  "endMs": 84560,
+  "timestampMs": 84420,
+  "confidence": null
+ },
+ {
+  "text": " quest,",
+  "startMs": 84560,
+  "endMs": 85180,
+  "timestampMs": 84870,
+  "confidence": null
+ },
+ {
+  "text": " sends",
+  "startMs": 85180,
+  "endMs": 85360,
+  "timestampMs": 85270,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 85360,
+  "endMs": 85540,
+  "timestampMs": 85450,
+  "confidence": null
+ },
+ {
+  "text": " warm",
+  "startMs": 85540,
+  "endMs": 85800,
+  "timestampMs": 85670,
+  "confidence": null
+ },
+ {
+  "text": " check-in —",
+  "startMs": 85800,
+  "endMs": 86820,
+  "timestampMs": 86310,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 86820,
+  "endMs": 87020,
+  "timestampMs": 86920,
+  "confidence": null
+ },
+ {
+  "text": " seconds",
+  "startMs": 87020,
+  "endMs": 87320,
+  "timestampMs": 87170,
+  "confidence": null
+ },
+ {
+  "text": " later,",
+  "startMs": 87320,
+  "endMs": 87780,
+  "timestampMs": 87550,
+  "confidence": null
+ },
+ {
+  "text": " it",
+  "startMs": 87780,
+  "endMs": 87900,
+  "timestampMs": 87840,
+  "confidence": null
+ },
+ {
+  "text": " lands",
+  "startMs": 87900,
+  "endMs": 88120,
+  "timestampMs": 88010,
+  "confidence": null
+ },
+ {
+  "text": " on",
+  "startMs": 88120,
+  "endMs": 88320,
+  "timestampMs": 88220,
+  "confidence": null
+ },
+ {
+  "text": " his",
+  "startMs": 88320,
+  "endMs": 88460,
+  "timestampMs": 88390,
+  "confidence": null
+ },
+ {
+  "text": " phone.",
+  "startMs": 88460,
+  "endMs": 88680,
+  "timestampMs": 88570,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "OtaPath",
+  "startMs": 95500,
+  "endMs": 96000,
+  "timestampMs": 95750,
+  "confidence": null
+ },
+ {
+  "text": " never",
+  "startMs": 96000,
+  "endMs": 96240,
+  "timestampMs": 96120,
+  "confidence": null
+ },
+ {
+  "text": " asks",
+  "startMs": 96240,
+  "endMs": 96560,
+  "timestampMs": 96400,
+  "confidence": null
+ },
+ {
+  "text": " how",
+  "startMs": 96560,
+  "endMs": 96760,
+  "timestampMs": 96660,
+  "confidence": null
+ },
+ {
+  "text": " you",
+  "startMs": 96760,
+  "endMs": 96900,
+  "timestampMs": 96830,
+  "confidence": null
+ },
+ {
+  "text": " feel —",
+  "startMs": 96900,
+  "endMs": 97520,
+  "timestampMs": 97210,
+  "confidence": null
+ },
+ {
+  "text": " it",
+  "startMs": 97520,
+  "endMs": 97620,
+  "timestampMs": 97570,
+  "confidence": null
+ },
+ {
+  "text": " notices.",
+  "startMs": 97620,
+  "endMs": 97980,
+  "timestampMs": 97800,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Every",
+  "startMs": 98700,
+  "endMs": 98960,
+  "timestampMs": 98830,
+  "confidence": null
+ },
+ {
+  "text": " signal",
+  "startMs": 98960,
+  "endMs": 99300,
+  "timestampMs": 99130,
+  "confidence": null
+ },
+ {
+  "text": " is",
+  "startMs": 99300,
+  "endMs": 99540,
+  "timestampMs": 99420,
+  "confidence": null
+ },
+ {
+  "text": " compared",
+  "startMs": 99540,
+  "endMs": 99860,
+  "timestampMs": 99700,
+  "confidence": null
+ },
+ {
+  "text": " to",
+  "startMs": 99860,
+  "endMs": 100060,
+  "timestampMs": 99960,
+  "confidence": null
+ },
+ {
+  "text": " the",
+  "startMs": 100060,
+  "endMs": 100180,
+  "timestampMs": 100120,
+  "confidence": null
+ },
+ {
+  "text": " patient's",
+  "startMs": 100180,
+  "endMs": 100640,
+  "timestampMs": 100410,
+  "confidence": null
+ },
+ {
+  "text": " own",
+  "startMs": 100640,
+  "endMs": 100800,
+  "timestampMs": 100720,
+  "confidence": null
+ },
+ {
+  "text": " baseline,",
+  "startMs": 100800,
+  "endMs": 101760,
+  "timestampMs": 101280,
+  "confidence": null
+ },
+ {
+  "text": " and",
+  "startMs": 101760,
+  "endMs": 102000,
+  "timestampMs": 101880,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 102000,
+  "endMs": 102100,
+  "timestampMs": 102050,
+  "confidence": null
+ },
+ {
+  "text": " learning",
+  "startMs": 102100,
+  "endMs": 102300,
+  "timestampMs": 102200,
+  "confidence": null
+ },
+ {
+  "text": " loop",
+  "startMs": 102300,
+  "endMs": 102560,
+  "timestampMs": 102430,
+  "confidence": null
+ },
+ {
+  "text": " tracks",
+  "startMs": 102560,
+  "endMs": 102880,
+  "timestampMs": 102720,
+  "confidence": null
+ },
+ {
+  "text": " which",
+  "startMs": 102880,
+  "endMs": 103140,
+  "timestampMs": 103010,
+  "confidence": null
+ },
+ {
+  "text": " places",
+  "startMs": 103140,
+  "endMs": 103520,
+  "timestampMs": 103330,
+  "confidence": null
+ },
+ {
+  "text": " lift",
+  "startMs": 103520,
+  "endMs": 103800,
+  "timestampMs": 103660,
+  "confidence": null
+ },
+ {
+  "text": " each",
+  "startMs": 103800,
+  "endMs": 104160,
+  "timestampMs": 103980,
+  "confidence": null
+ },
+ {
+  "text": " person.",
+  "startMs": 104160,
+  "endMs": 104500,
+  "timestampMs": 104330,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Built",
+  "startMs": 105100,
+  "endMs": 105260,
+  "timestampMs": 105180,
+  "confidence": null
+ },
+ {
+  "text": " in",
+  "startMs": 105260,
+  "endMs": 105440,
+  "timestampMs": 105350,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 105440,
+  "endMs": 105560,
+  "timestampMs": 105500,
+  "confidence": null
+ },
+ {
+  "text": " single",
+  "startMs": 105560,
+  "endMs": 105800,
+  "timestampMs": 105680,
+  "confidence": null
+ },
+ {
+  "text": " hackathon:",
+  "startMs": 105800,
+  "endMs": 106760,
+  "timestampMs": 106280,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 106760,
+  "endMs": 106840,
+  "timestampMs": 106800,
+  "confidence": null
+ },
+ {
+  "text": " real",
+  "startMs": 106840,
+  "endMs": 107040,
+  "timestampMs": 106940,
+  "confidence": null
+ },
+ {
+  "text": " app,",
+  "startMs": 107040,
+  "endMs": 107560,
+  "timestampMs": 107300,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 107560,
+  "endMs": 107600,
+  "timestampMs": 107580,
+  "confidence": null
+ },
+ {
+  "text": " real",
+  "startMs": 107600,
+  "endMs": 107820,
+  "timestampMs": 107710,
+  "confidence": null
+ },
+ {
+  "text": " backend,",
+  "startMs": 107820,
+  "endMs": 108560,
+  "timestampMs": 108190,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 108560,
+  "endMs": 108680,
+  "timestampMs": 108620,
+  "confidence": null
+ },
+ {
+  "text": " real",
+  "startMs": 108680,
+  "endMs": 108960,
+  "timestampMs": 108820,
+  "confidence": null
+ },
+ {
+  "text": " closed",
+  "startMs": 108960,
+  "endMs": 109240,
+  "timestampMs": 109100,
+  "confidence": null
+ },
+ {
+  "text": " loop.",
+  "startMs": 109240,
+  "endMs": 109560,
+  "timestampMs": 109400,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "OtaPath.",
+  "startMs": 110900,
+  "endMs": 111740,
+  "timestampMs": 111320,
+  "confidence": null
+ },
+ {
+  "text": " From",
+  "startMs": 111740,
+  "endMs": 111820,
+  "timestampMs": 111780,
+  "confidence": null
+ },
+ {
+  "text": " hospital",
+  "startMs": 111820,
+  "endMs": 112200,
+  "timestampMs": 112010,
+  "confidence": null
+ },
+ {
+  "text": " discharge",
+  "startMs": 112200,
+  "endMs": 112740,
+  "timestampMs": 112470,
+  "confidence": null
+ },
+ {
+  "text": " to",
+  "startMs": 112740,
+  "endMs": 113120,
+  "timestampMs": 112930,
+  "confidence": null
+ },
+ {
+  "text": " lasting",
+  "startMs": 113120,
+  "endMs": 113440,
+  "timestampMs": 113280,
+  "confidence": null
+ },
+ {
+  "text": " recovery —",
+  "startMs": 113440,
+  "endMs": 114440,
+  "timestampMs": 113940,
+  "confidence": null
+ },
+ {
+  "text": " one",
+  "startMs": 114440,
+  "endMs": 114620,
+  "timestampMs": 114530,
+  "confidence": null
+ },
+ {
+  "text": " small",
+  "startMs": 114620,
+  "endMs": 114940,
+  "timestampMs": 114780,
+  "confidence": null
+ },
+ {
+  "text": " walk",
+  "startMs": 114940,
+  "endMs": 115200,
+  "timestampMs": 115070,
+  "confidence": null
+ },
+ {
+  "text": " at",
+  "startMs": 115200,
+  "endMs": 115380,
+  "timestampMs": 115290,
+  "confidence": null
+ },
+ {
+  "text": " a",
+  "startMs": 115380,
+  "endMs": 115500,
+  "timestampMs": 115440,
+  "confidence": null
+ },
+ {
+  "text": " time.",
+  "startMs": 115500,
+  "endMs": 115760,
+  "timestampMs": 115630,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Step",
+  "startMs": 116500,
+  "endMs": 116740,
+  "timestampMs": 116620,
+  "confidence": null
+ },
+ {
+  "text": " outside.",
+  "startMs": 116740,
+  "endMs": 117500,
+  "timestampMs": 117120,
+  "confidence": null
+ },
+ {
+  "text": " Feel",
+  "startMs": 117500,
+  "endMs": 117600,
+  "timestampMs": 117550,
+  "confidence": null
+ },
+ {
+  "text": " brighter.",
+  "startMs": 117600,
+  "endMs": 117860,
+  "timestampMs": 117730,
+  "confidence": null,
+  "pageBreakAfter": true
+ }
+]

@@ -1,0 +1,1395 @@
+{
+ "hook-1": [
+  {
+   "word": "TMS",
+   "start": 0.0,
+   "end": 0.7
+  },
+  {
+   "word": "therapy",
+   "start": 0.7,
+   "end": 1.16
+  },
+  {
+   "word": "can",
+   "start": 1.16,
+   "end": 1.64
+  },
+  {
+   "word": "lift",
+   "start": 1.64,
+   "end": 1.84
+  },
+  {
+   "word": "people",
+   "start": 1.84,
+   "end": 2.18
+  },
+  {
+   "word": "out",
+   "start": 2.18,
+   "end": 2.36
+  },
+  {
+   "word": "of",
+   "start": 2.36,
+   "end": 2.5
+  },
+  {
+   "word": "severe",
+   "start": 2.5,
+   "end": 2.72
+  },
+  {
+   "word": "depression.",
+   "start": 2.72,
+   "end": 3.1
+  }
+ ],
+ "hook-2": [
+  {
+   "word": "Then",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "word": "they're",
+   "start": 0.12,
+   "end": 0.3
+  },
+  {
+   "word": "sent",
+   "start": 0.3,
+   "end": 0.5
+  },
+  {
+   "word": "home,",
+   "start": 0.5,
+   "end": 0.88
+  },
+  {
+   "word": "alone.",
+   "start": 1.08,
+   "end": 1.4
+  }
+ ],
+ "hook-3": [
+  {
+   "word": "Within",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "word": "a",
+   "start": 0.16,
+   "end": 0.3
+  },
+  {
+   "word": "year,",
+   "start": 0.3,
+   "end": 0.5
+  },
+  {
+   "word": "roughly",
+   "start": 0.8,
+   "end": 0.96
+  },
+  {
+   "word": "one",
+   "start": 0.96,
+   "end": 1.24
+  },
+  {
+   "word": "in",
+   "start": 1.24,
+   "end": 1.44
+  },
+  {
+   "word": "three",
+   "start": 1.44,
+   "end": 1.64
+  },
+  {
+   "word": "relapses.",
+   "start": 1.64,
+   "end": 2.08
+  }
+ ],
+ "hook-4": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.1
+  },
+  {
+   "word": "the",
+   "start": 0.1,
+   "end": 0.2
+  },
+  {
+   "word": "warning",
+   "start": 0.2,
+   "end": 0.44
+  },
+  {
+   "word": "signs,",
+   "start": 0.44,
+   "end": 0.94
+  },
+  {
+   "word": "nobody",
+   "start": 1.32,
+   "end": 1.48
+  },
+  {
+   "word": "is",
+   "start": 1.48,
+   "end": 1.78
+  },
+  {
+   "word": "watching.",
+   "start": 1.78,
+   "end": 2.12
+  }
+ ],
+ "sol-1": [
+  {
+   "word": "Meet",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "OtaPath,",
+   "start": 0.24,
+   "end": 0.84
+  },
+  {
+   "word": "a",
+   "start": 1.3,
+   "end": 1.42
+  },
+  {
+   "word": "warm",
+   "start": 1.42,
+   "end": 1.66
+  },
+  {
+   "word": "walking",
+   "start": 1.66,
+   "end": 2.0
+  },
+  {
+   "word": "companion",
+   "start": 2.0,
+   "end": 2.5
+  },
+  {
+   "word": "for",
+   "start": 2.5,
+   "end": 2.9
+  },
+  {
+   "word": "the",
+   "start": 2.9,
+   "end": 3.0
+  },
+  {
+   "word": "fragile",
+   "start": 3.0,
+   "end": 3.38
+  },
+  {
+   "word": "weeks",
+   "start": 3.38,
+   "end": 3.7
+  },
+  {
+   "word": "after",
+   "start": 3.7,
+   "end": 4.08
+  },
+  {
+   "word": "treatment.",
+   "start": 4.08,
+   "end": 4.4
+  }
+ ],
+ "sol-2": [
+  {
+   "word": "No",
+   "start": 0.0,
+   "end": 0.22
+  },
+  {
+   "word": "questionnaires,",
+   "start": 0.22,
+   "end": 0.92
+  },
+  {
+   "word": "no",
+   "start": 1.24,
+   "end": 1.34
+  },
+  {
+   "word": "streaks,",
+   "start": 1.34,
+   "end": 1.7
+  },
+  {
+   "word": "no",
+   "start": 1.98,
+   "end": 2.06
+  },
+  {
+   "word": "guilt.",
+   "start": 2.06,
+   "end": 2.3
+  }
+ ],
+ "sol-3": [
+  {
+   "word": "Just",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "tiny,",
+   "start": 0.24,
+   "end": 0.68
+  },
+  {
+   "word": "real",
+   "start": 0.8,
+   "end": 1.02
+  },
+  {
+   "word": "world",
+   "start": 1.02,
+   "end": 1.28
+  },
+  {
+   "word": "quests,",
+   "start": 1.28,
+   "end": 1.72
+  },
+  {
+   "word": "while",
+   "start": 2.04,
+   "end": 2.26
+  },
+  {
+   "word": "voice,",
+   "start": 2.26,
+   "end": 2.56
+  },
+  {
+   "word": "photos,",
+   "start": 2.84,
+   "end": 3.12
+  },
+  {
+   "word": "and",
+   "start": 3.38,
+   "end": 3.46
+  },
+  {
+   "word": "movement",
+   "start": 3.46,
+   "end": 3.78
+  },
+  {
+   "word": "quietly",
+   "start": 3.78,
+   "end": 4.22
+  },
+  {
+   "word": "keep",
+   "start": 4.22,
+   "end": 4.58
+  },
+  {
+   "word": "the",
+   "start": 4.58,
+   "end": 4.72
+  },
+  {
+   "word": "care",
+   "start": 4.72,
+   "end": 4.88
+  },
+  {
+   "word": "team",
+   "start": 4.88,
+   "end": 5.12
+  },
+  {
+   "word": "in",
+   "start": 5.12,
+   "end": 5.28
+  },
+  {
+   "word": "the",
+   "start": 5.28,
+   "end": 5.36
+  },
+  {
+   "word": "loop.",
+   "start": 5.36,
+   "end": 5.54
+  }
+ ],
+ "f1-1": [
+  {
+   "word": "Feature",
+   "start": 0.0,
+   "end": 0.22
+  },
+  {
+   "word": "1,",
+   "start": 0.22,
+   "end": 0.56
+  },
+  {
+   "word": "the",
+   "start": 0.86,
+   "end": 0.94
+  },
+  {
+   "word": "map",
+   "start": 0.94,
+   "end": 1.12
+  },
+  {
+   "word": "is",
+   "start": 1.12,
+   "end": 1.3
+  },
+  {
+   "word": "the",
+   "start": 1.3,
+   "end": 1.44
+  },
+  {
+   "word": "game.",
+   "start": 1.44,
+   "end": 1.68
+  }
+ ],
+ "f1-2": [
+  {
+   "word": "Matti",
+   "start": 0.0,
+   "end": 0.36
+  },
+  {
+   "word": "opens",
+   "start": 0.36,
+   "end": 0.66
+  },
+  {
+   "word": "the",
+   "start": 0.66,
+   "end": 0.84
+  },
+  {
+   "word": "app,",
+   "start": 0.84,
+   "end": 1.14
+  },
+  {
+   "word": "meets",
+   "start": 1.38,
+   "end": 1.58
+  },
+  {
+   "word": "his",
+   "start": 1.58,
+   "end": 1.8
+  },
+  {
+   "word": "walking",
+   "start": 1.8,
+   "end": 2.12
+  },
+  {
+   "word": "buddy,",
+   "start": 2.12,
+   "end": 2.36
+  },
+  {
+   "word": "and",
+   "start": 2.64,
+   "end": 2.74
+  },
+  {
+   "word": "finds",
+   "start": 2.74,
+   "end": 2.98
+  },
+  {
+   "word": "a",
+   "start": 2.98,
+   "end": 3.14
+  },
+  {
+   "word": "gentle",
+   "start": 3.14,
+   "end": 3.42
+  },
+  {
+   "word": "quest,",
+   "start": 3.42,
+   "end": 3.86
+  },
+  {
+   "word": "prescribed",
+   "start": 4.18,
+   "end": 4.6
+  },
+  {
+   "word": "by",
+   "start": 4.6,
+   "end": 4.9
+  },
+  {
+   "word": "his",
+   "start": 4.9,
+   "end": 5.04
+  },
+  {
+   "word": "own",
+   "start": 5.04,
+   "end": 5.26
+  },
+  {
+   "word": "doctor.",
+   "start": 5.26,
+   "end": 5.6
+  }
+ ],
+ "f1-3": [
+  {
+   "word": "Every",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "step",
+   "start": 0.24,
+   "end": 0.48
+  },
+  {
+   "word": "outside",
+   "start": 0.48,
+   "end": 0.88
+  },
+  {
+   "word": "clears",
+   "start": 0.88,
+   "end": 1.28
+  },
+  {
+   "word": "golden",
+   "start": 1.28,
+   "end": 1.74
+  },
+  {
+   "word": "mist",
+   "start": 1.74,
+   "end": 2.08
+  },
+  {
+   "word": "from",
+   "start": 2.08,
+   "end": 2.32
+  },
+  {
+   "word": "his",
+   "start": 2.32,
+   "end": 2.46
+  },
+  {
+   "word": "real",
+   "start": 2.46,
+   "end": 2.7
+  },
+  {
+   "word": "neighborhood.",
+   "start": 2.7,
+   "end": 2.98
+  }
+ ],
+ "f1-4": [
+  {
+   "word": "There's",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "nothing",
+   "start": 0.24,
+   "end": 0.42
+  },
+  {
+   "word": "to",
+   "start": 0.42,
+   "end": 0.64
+  },
+  {
+   "word": "fail,",
+   "start": 0.64,
+   "end": 0.94
+  },
+  {
+   "word": "only",
+   "start": 1.44,
+   "end": 1.54
+  },
+  {
+   "word": "streets",
+   "start": 1.54,
+   "end": 1.88
+  },
+  {
+   "word": "to",
+   "start": 1.88,
+   "end": 2.14
+  },
+  {
+   "word": "rediscover.",
+   "start": 2.14,
+   "end": 2.6
+  }
+ ],
+ "f2-1": [
+  {
+   "word": "Feature",
+   "start": 0.0,
+   "end": 0.18
+  },
+  {
+   "word": "2,",
+   "start": 0.18,
+   "end": 0.54
+  },
+  {
+   "word": "memory",
+   "start": 0.84,
+   "end": 1.04
+  },
+  {
+   "word": "capsules.",
+   "start": 1.04,
+   "end": 1.54
+  }
+ ],
+ "f2-2": [
+  {
+   "word": "At",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "word": "the",
+   "start": 0.12,
+   "end": 0.24
+  },
+  {
+   "word": "park,",
+   "start": 0.24,
+   "end": 0.5
+  },
+  {
+   "word": "he",
+   "start": 0.7,
+   "end": 0.78
+  },
+  {
+   "word": "snaps",
+   "start": 0.78,
+   "end": 1.04
+  },
+  {
+   "word": "one",
+   "start": 1.04,
+   "end": 1.34
+  },
+  {
+   "word": "vivid",
+   "start": 1.34,
+   "end": 1.6
+  },
+  {
+   "word": "thing",
+   "start": 1.6,
+   "end": 1.92
+  },
+  {
+   "word": "and",
+   "start": 1.92,
+   "end": 2.38
+  },
+  {
+   "word": "leaves",
+   "start": 2.38,
+   "end": 2.58
+  },
+  {
+   "word": "a",
+   "start": 2.58,
+   "end": 2.78
+  },
+  {
+   "word": "10",
+   "start": 2.78,
+   "end": 2.96
+  },
+  {
+   "word": "-second",
+   "start": 2.96,
+   "end": 3.22
+  },
+  {
+   "word": "voice",
+   "start": 3.22,
+   "end": 3.48
+  },
+  {
+   "word": "note.",
+   "start": 3.48,
+   "end": 3.76
+  }
+ ],
+ "f2-3": [
+  {
+   "word": "Under",
+   "start": 0.0,
+   "end": 0.22
+  },
+  {
+   "word": "the",
+   "start": 0.22,
+   "end": 0.36
+  },
+  {
+   "word": "hood,",
+   "start": 0.36,
+   "end": 0.6
+  },
+  {
+   "word": "OtaPath",
+   "start": 1.0,
+   "end": 1.36
+  },
+  {
+   "word": "reads",
+   "start": 1.36,
+   "end": 1.68
+  },
+  {
+   "word": "the",
+   "start": 1.68,
+   "end": 1.96
+  },
+  {
+   "word": "pitch",
+   "start": 1.96,
+   "end": 2.2
+  },
+  {
+   "word": "and",
+   "start": 2.2,
+   "end": 2.44
+  },
+  {
+   "word": "energy",
+   "start": 2.44,
+   "end": 2.72
+  },
+  {
+   "word": "of",
+   "start": 2.72,
+   "end": 2.94
+  },
+  {
+   "word": "his",
+   "start": 2.94,
+   "end": 3.06
+  },
+  {
+   "word": "voice,",
+   "start": 3.06,
+   "end": 3.36
+  },
+  {
+   "word": "the",
+   "start": 3.9,
+   "end": 4.02
+  },
+  {
+   "word": "color",
+   "start": 4.02,
+   "end": 4.24
+  },
+  {
+   "word": "and",
+   "start": 4.24,
+   "end": 4.48
+  },
+  {
+   "word": "light",
+   "start": 4.48,
+   "end": 4.66
+  },
+  {
+   "word": "of",
+   "start": 4.66,
+   "end": 4.82
+  },
+  {
+   "word": "his",
+   "start": 4.82,
+   "end": 4.94
+  },
+  {
+   "word": "photo,",
+   "start": 4.94,
+   "end": 5.28
+  },
+  {
+   "word": "and",
+   "start": 5.66,
+   "end": 5.82
+  },
+  {
+   "word": "the",
+   "start": 5.82,
+   "end": 5.9
+  },
+  {
+   "word": "richness",
+   "start": 5.9,
+   "end": 6.18
+  },
+  {
+   "word": "of",
+   "start": 6.18,
+   "end": 6.5
+  },
+  {
+   "word": "his",
+   "start": 6.5,
+   "end": 6.62
+  },
+  {
+   "word": "words.",
+   "start": 6.62,
+   "end": 6.86
+  }
+ ],
+ "f2-4": [
+  {
+   "word": "No",
+   "start": 0.0,
+   "end": 0.18
+  },
+  {
+   "word": "forms,",
+   "start": 0.18,
+   "end": 0.6
+  },
+  {
+   "word": "he",
+   "start": 0.98,
+   "end": 1.12
+  },
+  {
+   "word": "just",
+   "start": 1.12,
+   "end": 1.26
+  },
+  {
+   "word": "made",
+   "start": 1.26,
+   "end": 1.42
+  },
+  {
+   "word": "a",
+   "start": 1.42,
+   "end": 1.52
+  },
+  {
+   "word": "memory",
+   "start": 1.52,
+   "end": 1.86
+  },
+  {
+   "word": "pinned",
+   "start": 1.86,
+   "end": 2.2
+  },
+  {
+   "word": "to",
+   "start": 2.2,
+   "end": 2.4
+  },
+  {
+   "word": "the",
+   "start": 2.4,
+   "end": 2.5
+  },
+  {
+   "word": "map.",
+   "start": 2.5,
+   "end": 2.68
+  }
+ ],
+ "f3-1": [
+  {
+   "word": "Feature",
+   "start": 0.0,
+   "end": 0.2
+  },
+  {
+   "word": "3,",
+   "start": 0.2,
+   "end": 0.6
+  },
+  {
+   "word": "the",
+   "start": 0.92,
+   "end": 1.0
+  },
+  {
+   "word": "clinician's",
+   "start": 1.0,
+   "end": 1.64
+  },
+  {
+   "word": "side",
+   "start": 1.64,
+   "end": 1.76
+  },
+  {
+   "word": "of",
+   "start": 1.76,
+   "end": 1.9
+  },
+  {
+   "word": "the",
+   "start": 1.9,
+   "end": 1.98
+  },
+  {
+   "word": "loop.",
+   "start": 1.98,
+   "end": 2.16
+  }
+ ],
+ "f3-2": [
+  {
+   "word": "Dr.",
+   "start": 0.0,
+   "end": 0.28
+  },
+  {
+   "word": "Lindqvist's",
+   "start": 0.46,
+   "end": 0.9
+  },
+  {
+   "word": "dashboard",
+   "start": 0.9,
+   "end": 1.32
+  },
+  {
+   "word": "had",
+   "start": 1.32,
+   "end": 1.66
+  },
+  {
+   "word": "already",
+   "start": 1.66,
+   "end": 1.88
+  },
+  {
+   "word": "flagged",
+   "start": 1.88,
+   "end": 2.26
+  },
+  {
+   "word": "Matti's",
+   "start": 2.26,
+   "end": 2.76
+  },
+  {
+   "word": "quiet",
+   "start": 2.76,
+   "end": 2.98
+  },
+  {
+   "word": "slide.",
+   "start": 2.98,
+   "end": 3.36
+  }
+ ],
+ "f3-3": [
+  {
+   "word": "Today's",
+   "start": 0.0,
+   "end": 0.46
+  },
+  {
+   "word": "capsule",
+   "start": 0.46,
+   "end": 0.76
+  },
+  {
+   "word": "pulls",
+   "start": 0.76,
+   "end": 1.08
+  },
+  {
+   "word": "his",
+   "start": 1.08,
+   "end": 1.3
+  },
+  {
+   "word": "curves",
+   "start": 1.3,
+   "end": 1.6
+  },
+  {
+   "word": "back",
+   "start": 1.6,
+   "end": 1.86
+  },
+  {
+   "word": "up.",
+   "start": 1.86,
+   "end": 2.08
+  }
+ ],
+ "f3-4": [
+  {
+   "word": "She",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "word": "plays",
+   "start": 0.16,
+   "end": 0.4
+  },
+  {
+   "word": "his",
+   "start": 0.4,
+   "end": 0.62
+  },
+  {
+   "word": "voice",
+   "start": 0.62,
+   "end": 0.82
+  },
+  {
+   "word": "note,",
+   "start": 0.82,
+   "end": 1.14
+  },
+  {
+   "word": "prescribes",
+   "start": 1.36,
+   "end": 1.82
+  },
+  {
+   "word": "his",
+   "start": 1.82,
+   "end": 1.98
+  },
+  {
+   "word": "next",
+   "start": 1.98,
+   "end": 2.26
+  },
+  {
+   "word": "quest,",
+   "start": 2.26,
+   "end": 2.6
+  },
+  {
+   "word": "sends",
+   "start": 2.88,
+   "end": 3.06
+  },
+  {
+   "word": "a",
+   "start": 3.06,
+   "end": 3.24
+  },
+  {
+   "word": "warm",
+   "start": 3.24,
+   "end": 3.5
+  },
+  {
+   "word": "check",
+   "start": 3.5,
+   "end": 3.78
+  },
+  {
+   "word": "-in,",
+   "start": 3.78,
+   "end": 4.08
+  },
+  {
+   "word": "and",
+   "start": 4.52,
+   "end": 4.72
+  },
+  {
+   "word": "seconds",
+   "start": 4.72,
+   "end": 5.02
+  },
+  {
+   "word": "later,",
+   "start": 5.02,
+   "end": 5.32
+  },
+  {
+   "word": "it",
+   "start": 5.48,
+   "end": 5.6
+  },
+  {
+   "word": "lands",
+   "start": 5.6,
+   "end": 5.82
+  },
+  {
+   "word": "on",
+   "start": 5.82,
+   "end": 6.02
+  },
+  {
+   "word": "his",
+   "start": 6.02,
+   "end": 6.16
+  },
+  {
+   "word": "phone.",
+   "start": 6.16,
+   "end": 6.38
+  }
+ ],
+ "diff-1": [
+  {
+   "word": "OtaPath",
+   "start": 0.0,
+   "end": 0.5
+  },
+  {
+   "word": "never",
+   "start": 0.5,
+   "end": 0.74
+  },
+  {
+   "word": "asks",
+   "start": 0.74,
+   "end": 1.06
+  },
+  {
+   "word": "how",
+   "start": 1.06,
+   "end": 1.26
+  },
+  {
+   "word": "you",
+   "start": 1.26,
+   "end": 1.4
+  },
+  {
+   "word": "feel.",
+   "start": 1.4,
+   "end": 1.62
+  },
+  {
+   "word": "It",
+   "start": 2.02,
+   "end": 2.12
+  },
+  {
+   "word": "notices.",
+   "start": 2.12,
+   "end": 2.48
+  }
+ ],
+ "diff-2": [
+  {
+   "word": "Every",
+   "start": 0.0,
+   "end": 0.26
+  },
+  {
+   "word": "signal",
+   "start": 0.26,
+   "end": 0.6
+  },
+  {
+   "word": "is",
+   "start": 0.6,
+   "end": 0.84
+  },
+  {
+   "word": "compared",
+   "start": 0.84,
+   "end": 1.16
+  },
+  {
+   "word": "to",
+   "start": 1.16,
+   "end": 1.36
+  },
+  {
+   "word": "the",
+   "start": 1.36,
+   "end": 1.48
+  },
+  {
+   "word": "patient's",
+   "start": 1.48,
+   "end": 1.94
+  },
+  {
+   "word": "own",
+   "start": 1.94,
+   "end": 2.1
+  },
+  {
+   "word": "baseline,",
+   "start": 2.1,
+   "end": 2.62
+  },
+  {
+   "word": "and",
+   "start": 3.06,
+   "end": 3.3
+  },
+  {
+   "word": "a",
+   "start": 3.3,
+   "end": 3.4
+  },
+  {
+   "word": "learning",
+   "start": 3.4,
+   "end": 3.6
+  },
+  {
+   "word": "loop",
+   "start": 3.6,
+   "end": 3.86
+  },
+  {
+   "word": "tracks",
+   "start": 3.86,
+   "end": 4.18
+  },
+  {
+   "word": "which",
+   "start": 4.18,
+   "end": 4.44
+  },
+  {
+   "word": "places",
+   "start": 4.44,
+   "end": 4.82
+  },
+  {
+   "word": "lift",
+   "start": 4.82,
+   "end": 5.1
+  },
+  {
+   "word": "each",
+   "start": 5.1,
+   "end": 5.46
+  },
+  {
+   "word": "person.",
+   "start": 5.46,
+   "end": 5.8
+  }
+ ],
+ "diff-3": [
+  {
+   "word": "Built",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "word": "in",
+   "start": 0.16,
+   "end": 0.34
+  },
+  {
+   "word": "a",
+   "start": 0.34,
+   "end": 0.46
+  },
+  {
+   "word": "single",
+   "start": 0.46,
+   "end": 0.7
+  },
+  {
+   "word": "hackathon.",
+   "start": 0.7,
+   "end": 1.22
+  },
+  {
+   "word": "A",
+   "start": 1.66,
+   "end": 1.74
+  },
+  {
+   "word": "real",
+   "start": 1.74,
+   "end": 1.94
+  },
+  {
+   "word": "app,",
+   "start": 1.94,
+   "end": 2.22
+  },
+  {
+   "word": "a",
+   "start": 2.46,
+   "end": 2.5
+  },
+  {
+   "word": "real",
+   "start": 2.5,
+   "end": 2.72
+  },
+  {
+   "word": "back",
+   "start": 2.72,
+   "end": 2.92
+  },
+  {
+   "word": "end,",
+   "start": 2.92,
+   "end": 3.22
+  },
+  {
+   "word": "a",
+   "start": 3.46,
+   "end": 3.58
+  },
+  {
+   "word": "real",
+   "start": 3.58,
+   "end": 3.86
+  },
+  {
+   "word": "closed",
+   "start": 3.86,
+   "end": 4.14
+  },
+  {
+   "word": "loop.",
+   "start": 4.14,
+   "end": 4.46
+  }
+ ],
+ "end-1": [
+  {
+   "word": "OtaPath,",
+   "start": 0.0,
+   "end": 0.52
+  },
+  {
+   "word": "from",
+   "start": 0.84,
+   "end": 0.92
+  },
+  {
+   "word": "hospital",
+   "start": 0.92,
+   "end": 1.3
+  },
+  {
+   "word": "discharge",
+   "start": 1.3,
+   "end": 1.84
+  },
+  {
+   "word": "to",
+   "start": 1.84,
+   "end": 2.22
+  },
+  {
+   "word": "lasting",
+   "start": 2.22,
+   "end": 2.54
+  },
+  {
+   "word": "recovery,",
+   "start": 2.54,
+   "end": 3.02
+  },
+  {
+   "word": "one",
+   "start": 3.54,
+   "end": 3.72
+  },
+  {
+   "word": "small",
+   "start": 3.72,
+   "end": 4.04
+  },
+  {
+   "word": "walk",
+   "start": 4.04,
+   "end": 4.3
+  },
+  {
+   "word": "at",
+   "start": 4.3,
+   "end": 4.48
+  },
+  {
+   "word": "a",
+   "start": 4.48,
+   "end": 4.6
+  },
+  {
+   "word": "time.",
+   "start": 4.6,
+   "end": 4.86
+  }
+ ],
+ "end-2": [
+  {
+   "word": "Step",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "outside,",
+   "start": 0.24,
+   "end": 0.64
+  },
+  {
+   "word": "feel",
+   "start": 1.0,
+   "end": 1.1
+  },
+  {
+   "word": "brighter.",
+   "start": 1.1,
+   "end": 1.36
+  }
+ ]
+}
